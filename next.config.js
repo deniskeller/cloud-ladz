@@ -1,4 +1,13 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {}
+const path = require("path");
+const withImages = require("next-images");
 
-module.exports = nextConfig
+module.exports = withImages({
+  reactStrictMode: true,
+  sassOptions: {
+    includePaths: [path.join(__dirname, "src/assets/scss")],
+    prependData: `@import "main.scss";`,
+  },
+	experimental: {
+		scrollRestoration: true,
+	}
+});
