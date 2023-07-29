@@ -1,0 +1,96 @@
+.Wrapper {
+	display: none;
+	width: 100vw;
+	min-height: 100vh;
+	height: 100%;
+	overflow-y: auto;
+	background: rgba(13, 16, 38, 0.3);
+	position: fixed;
+	z-index: 1000000;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+.Container {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: em(30px) em(8px);
+}
+
+.Popup {
+	position: relative;
+	width: 100%;
+	height: max-content;
+	margin: 0 auto;
+	background: #2d2d2d;
+	box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.06),
+		0px 4px 6px -1px rgba(0, 0, 0, 0.08);
+	border-radius: em(10px);
+	overflow: hidden;
+
+	&_Close {
+		position: absolute;
+		z-index: 1000;
+		top: em(30px);
+		right: em(30px);
+		width: em(35px);
+		height: em(35px);
+		cursor: pointer;
+		transition: all 0.6s ease-in-out;
+		&:hover {
+			transform: rotate(90deg);
+		}
+		@include iflaptop {
+			top: em(20px);
+			right: em(20px);
+		}
+		@include iftablet {
+			top: em(20px);
+			right: em(20px);
+		}
+		@include ifmobile {
+			width: em(24px);
+			height: em(24px);
+			top: em(16px);
+			right: em(16px);
+		}
+	}
+}
+
+.Popup_large {
+	max-width: em(834px);
+	@include iflaptop {
+		max-width: em(600px);
+	}
+	@include iftablet {
+		max-width: em(600px);
+	}
+	@include ifmobile {
+		max-width: em(340px);
+	}
+}
+
+.Popup_middle {
+	max-width: em(480px);
+}
+
+.Popup_small {
+	max-width: em(384px);
+}
+
+.Visible {
+	display: grid;
+	justify-items: center;
+}
+
+@include iflaptop {
+}
+@include iftablet {
+}
+@include ifmobile {
+}
