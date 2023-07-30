@@ -7,19 +7,15 @@ export default function Document() {
 				<link rel='preconnect' href='https://fonts.googleapis.com' />
 				<link rel='preconnect' href='https://fonts.gstatic.com' />
 				<link
-					href='https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap'
+					href='https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,200;9..40,300;9..40,400;9..40,500&family=Montserrat:wght@500&display=swap'
 					rel='stylesheet'
 				/>
-				<link
-					rel='stylesheet'
-					href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css'
-				></link>
 				<link
 					rel='stylesheet'
 					href='https://use.typekit.net/fzy6ewm.css'
 				></link>
 			</Head>
-			<title>Welcome to Doqins & Partners family office</title>
+			<title>Cloud ladz</title>
 			<body>
 				<Main />
 				<NextScript />

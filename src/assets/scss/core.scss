@@ -2,8 +2,9 @@
 
 html {
 	color: $black;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'DM Sans', sans-serif;
 	font-size: math.div(16, 720) * 100vh;
+	font-weight: $normal;
 	line-height: normal;
 	scroll-behavior: smooth;
 	min-height: 100%;
@@ -45,7 +46,6 @@ body {
 	width: 100%;
 	display: flex;
 	flex-direction: column;
-	background: $body;
 }
 
 a {
@@ -74,7 +74,7 @@ textarea::placeholder {
 	line-height: 100%;
 }
 input::placeholder {
-	font-weight: 300 !important;
+	font-weight: 200 !important;
 }
 
 //remove arrows in all browser
