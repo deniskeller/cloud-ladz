@@ -3,10 +3,6 @@
 
 	&_Image {
 		image-rendering: pixelated;
-		@include ifmobile {
-			// background-position: center !important;
-			// background-size: contain !important;
-		}
 	}
 }
 

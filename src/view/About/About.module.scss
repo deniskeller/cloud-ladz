@@ -6,7 +6,7 @@
 	padding: em(249px) 0 em(293px);
 
 	@include iflaptop {
-		padding: em(300px) 0 em(324px);
+		padding: em(300px) 0 em(394px);
 	}
 	@include iftablet {
 		padding: em(454px) 0 em(438px);
@@ -56,6 +56,100 @@
 			}
 			@include ifmobile {
 				font-size: em(32px);
+			}
+		}
+	}
+}
+
+.About {
+	position: relative;
+	padding-bottom: em(30px);
+	@include iftablet {
+		padding-bottom: em(115px);
+	}
+
+	p {
+		color: $white;
+		font-size: em(24px);
+		font-weight: $normal;
+		@include iftablet {
+			font-size: em(20px);
+		}
+		@include ifmobile {
+			font-size: em(18px);
+		}
+	}
+
+	h2 {
+		color: $white;
+		font-size: em(42px);
+		font-weight: $medium;
+		@include iftablet {
+			font-size: em(36px);
+		}
+		@include ifmobile {
+			font-size: em(24px);
+		}
+	}
+
+	.paragraph1 {
+		margin-bottom: em(30px, 24px);
+	}
+	.paragraph2 {
+		margin-bottom: em(40px, 24px);
+	}
+	.paragraph3 {
+		margin-bottom: em(70px, 24px);
+		@include iftablet {
+			margin-bottom: em(30px, 24px);
+		}
+		@include ifmobile {
+			margin-bottom: em(40px, 24px);
+		}
+	}
+
+	.title1,
+	.title2 {
+		margin-bottom: em(30px, 42px);
+		@include iftablet {
+			margin-bottom: em(16px, 36px);
+		}
+		@include ifmobile {
+			margin-bottom: em(12px, 24px);
+		}
+	}
+
+	.Icon {
+		margin: 0 auto;
+		svg {
+			width: 100%;
+		}
+
+		&_Desktop {
+			display: none;
+			max-width: em(1348px);
+			height: em(256px);
+			margin-bottom: em(70px);
+			@include ifdesktop {
+				display: block;
+			}
+		}
+
+		&_Other {
+			display: block;
+			max-width: em(1348px);
+			height: em(200px);
+			margin-bottom: em(70px);
+			@include ifdesktop {
+				display: none;
+			}
+			@include iftablet {
+				height: em(142px);
+				margin-bottom: em(30px);
+			}
+			@include ifmobile {
+				height: em(70px);
+				margin-bottom: em(30px);
 			}
 		}
 	}
