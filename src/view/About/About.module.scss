@@ -63,7 +63,7 @@
 
 .About {
 	position: relative;
-	padding-bottom: em(30px);
+	padding: em(50px) 0 em(30px);
 	@include iftablet {
 		padding-bottom: em(115px);
 	}
@@ -151,6 +151,54 @@
 				height: em(70px);
 				margin-bottom: em(30px);
 			}
+		}
+	}
+
+	&_Image1,
+	&_Image2 {
+		width: em(1251px);
+		height: em(899px);
+		position: absolute;
+		right: 0;
+
+		@include iflaptop {
+			width: em(1024px);
+			height: em(543px);
+		}
+		@include iftablet {
+			width: em(768px);
+			height: em(543px);
+		}
+		@include ifmobile {
+			width: em(768px);
+			height: em(543px);
+		}
+	}
+
+	&_Image1 {
+		top: em(-277px);
+		transform: scale(1, -1);
+		@include iflaptop {
+			top: em(-242px);
+		}
+		@include iftablet {
+			top: em(-270px);
+		}
+		@include ifmobile {
+			top: em(-280px);
+		}
+	}
+
+	&_Image2 {
+		bottom: em(-360px);
+		@include iflaptop {
+			bottom: em(-117px);
+		}
+		@include iftablet {
+			bottom: em(0px);
+		}
+		@include ifmobile {
+			bottom: em(-20px);
 		}
 	}
 }

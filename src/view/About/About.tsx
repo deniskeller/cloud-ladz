@@ -26,18 +26,24 @@ const About: React.FC = () => {
 			</div>
 
 			<div className={s.About}>
-				{/* <div className={s.About_Image1}>
+				<div className={s.About_Image1}>
 					<Image
 						src='/images/pictures/bg-stars.png'
 						fill
-						alt={'About header bg'}
+						alt={'stars'}
 						unoptimized={true}
-						className={s.Header_Image}
-						style={{ objectFit: 'cover' }}
 					/>
 				</div>
 
-				<div className={s.About_Image2}></div> */}
+				<div className={s.About_Image2}>
+					<Image
+						src='/images/pictures/bg-stars.png'
+						fill
+						alt={'stars'}
+						unoptimized={true}
+					/>
+				</div>
+
 				<BaseContainer>
 					<p className={s.paragraph1}>
 						Cloud Ladz is an independent sales organization founded in 2017 and
