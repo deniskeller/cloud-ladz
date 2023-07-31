@@ -1,7 +1,5 @@
-import { ALL_ICONS } from '@constants/icons';
 import useOnClickOutside from '@hooks/useOnClickOutside';
 import React, { ReactNode, useCallback, useEffect } from 'react';
-import { BaseIcon } from '..';
 import s from './BasePopup.module.scss';
 
 interface Props {
@@ -64,12 +62,12 @@ const BasePopup: React.FC<Props> = ({
 		>
 			<div className={s.Container}>
 				<div className={`${s.Popup} ${s['Popup_' + type]}`} ref={thisPopup}>
-					<BaseIcon
+					{/* <BaseIcon
 						viewBox='0 0 24 24'
 						icon={ALL_ICONS.CLOSE}
 						className={s.Popup_Close}
 						onClick={hidePopup}
-					/>
+					/> */}
 
 					{children}
 				</div>
