@@ -1,0 +1,22 @@
+.Logo {
+	width: em(179px);
+	height: em(56px);
+	cursor: pointer;
+	svg {
+		width: inherit;
+		height: 100%;
+	}
+	&_Light {
+		svg path {
+			fill: $black;
+		}
+	}
+	@include iftablet {
+		width: em(147px);
+		height: em(46px);
+	}
+	@include ifmobile {
+		width: em(147px);
+		height: em(46px);
+	}
+}

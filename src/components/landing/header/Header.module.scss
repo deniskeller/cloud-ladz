@@ -1,0 +1,20 @@
+.Header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: em(88px);
+	padding: em(16px) em(30px);
+
+	@include iflaptop {
+		min-height: em(70px);
+	}
+
+	@include iftablet {
+		min-height: em(70px);
+		padding: em(12px) em(30px);
+	}
+	@include ifmobile {
+		min-height: em(70px);
+		padding: em(12px) em(30px);
+	}
+}
