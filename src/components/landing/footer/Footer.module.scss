@@ -1,0 +1,220 @@
+.FooterWrapper {
+	position: relative;
+
+	&_Image {
+		image-rendering: pixelated;
+		@include ifmobile {
+			background-position: center !important;
+			background-size: cover !important;
+		}
+	}
+}
+
+.Footer {
+	position: relative;
+	display: grid;
+	grid-template-columns: em(179px) 1fr;
+	gap: 0 em(150px);
+	min-height: em(362px);
+	padding: em(160px) 0 em(70px);
+
+	@include iflaptop {
+		grid-template-columns: 1fr;
+		gap: em(40px) 0;
+		padding: em(90px) 0 em(70px);
+	}
+	@include iftablet {
+		grid-template-columns: 1fr;
+		gap: em(30px) 0;
+		padding: em(40px) 0 em(70px);
+	}
+	@include ifmobile {
+		grid-template-columns: 1fr;
+		gap: em(30px) 0;
+		padding: em(50px) 0 em(60px);
+	}
+
+	.Logo {
+		width: em(179px);
+		height: em(56px);
+		cursor: pointer;
+		svg {
+			width: inherit;
+			height: 100%;
+		}
+
+		@include iftablet {
+			width: em(147px);
+			height: em(46px);
+		}
+		@include ifmobile {
+			width: em(147px);
+			height: em(46px);
+		}
+	}
+
+	.Content {
+		display: grid;
+		grid-template-columns: em(336px) 1fr;
+		gap: 0 em(150px);
+
+		@include iflaptop {
+			grid-template-columns: 1fr;
+			gap: em(60px) 0;
+		}
+		@include iftablet {
+			grid-template-columns: em(214px) 1fr;
+			gap: 0 em(90px);
+		}
+		@include ifmobile {
+			grid-template-columns: 1fr;
+			gap: em(20px) 0;
+		}
+
+		&_Navbar {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			gap: 0 em(60px);
+
+			@include iflaptop {
+			}
+			@include iftablet {
+				grid-template-columns: 1fr;
+				gap: em(40px) 0;
+			}
+			@include ifmobile {
+				grid-template-columns: 1fr 1fr;
+			}
+
+			.Link {
+				&_List {
+					display: grid;
+					grid-template-columns: 1fr;
+					gap: em(16px) 0;
+
+					@include iflaptop {
+						display: flex;
+						flex-direction: row;
+						justify-content: space-between;
+					}
+					@include iftablet {
+					}
+					@include ifmobile {
+					}
+					&_Item {
+						font-size: em(16px);
+						line-height: 100%;
+						font-weight: $normal;
+						position: relative;
+						white-space: nowrap;
+						width: max-content;
+						a {
+							color: $white;
+						}
+						@include ifmobile {
+							font-size: em(14px);
+						}
+
+						&::after {
+							content: '';
+							position: absolute;
+							bottom: em(-3px);
+							left: 0;
+							height: em(2px);
+							background-color: $yellow;
+						}
+						&:hover {
+							&::after {
+								animation: bottomLine 0.3s linear forwards;
+							}
+						}
+					}
+					&_Item.Light {
+						font-weight: 300;
+						a {
+							color: $black;
+						}
+						&::after {
+							background-color: #5f41d4;
+						}
+					}
+				}
+			}
+		}
+		&_Info {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			gap: em(16px) em(60px);
+			@include iflaptop {
+				gap: em(16px) em(262px);
+			}
+			@include iftablet {
+				grid-template-columns: 1fr;
+				gap: em(16px) 0;
+			}
+			@include ifmobile {
+				grid-template-columns: 1fr;
+				gap: em(16px) 0;
+			}
+
+			.InfoItem {
+				@include iflaptop {
+					max-width: em(349px);
+				}
+				@include iftablet {
+				}
+				@include ifmobile {
+				}
+				&:nth-child(2),
+				&:nth-child(4) {
+					order: 1;
+					@include iftablet {
+						order: 0;
+					}
+					@include ifmobile {
+						order: 0;
+					}
+				}
+
+				&_Label {
+					margin-bottom: em(6px);
+					line-height: 100%;
+					span {
+						display: flex;
+						color: $white;
+						font-size: em(16px);
+						font-weight: $medium;
+						@include ifmobile {
+							font-size: em(14px);
+						}
+					}
+					span.Light {
+						color: $black;
+						font-weight: 500;
+					}
+				}
+				&_Value {
+					color: $white2;
+					font-size: em(14px);
+					font-weight: $normal;
+					@include ifmobile {
+						font-size: em(12px);
+					}
+				}
+				&_Value.Light {
+					color: $black2;
+					font-weight: 300;
+				}
+			}
+		}
+	}
+}
+
+@keyframes bottomLine {
+	0% {
+		width: 0%;
+	}
+	100% {
+		width: 100%;
+	}
+}

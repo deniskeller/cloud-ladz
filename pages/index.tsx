@@ -3,7 +3,7 @@ import { Main } from '@view/index';
 
 const MainPage = () => {
 	return (
-		<Default>
+		<Default type='light'>
 			<Main />
 		</Default>
 	);

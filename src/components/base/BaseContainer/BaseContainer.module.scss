@@ -1,18 +1,14 @@
 .BaseContainer {
 	width: 100%;
-	max-width: em(1720px);
+	max-width: em(1672px);
 	margin: 0 auto;
 	padding: 0 em(50px);
 
-	@include iflaptop {
-		padding: 0 em(60px);
-	}
-
 	@include iftablet {
-		padding: 0 em(20px);
+		padding: 0 em(30px);
 	}
 
 	@include ifmobile {
-		padding: 0 em(10px);
+		padding: 0 em(16px);
 	}
 }

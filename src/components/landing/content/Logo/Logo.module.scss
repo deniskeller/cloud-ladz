@@ -2,6 +2,10 @@
 	width: em(179px);
 	height: em(56px);
 	cursor: pointer;
+	a {
+		display: flex;
+		height: 100%;
+	}
 	svg {
 		width: inherit;
 		height: 100%;

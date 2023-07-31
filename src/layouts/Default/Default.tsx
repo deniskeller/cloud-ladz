@@ -1,4 +1,4 @@
-// import { Footer } from 'components/landing/footer';
+import Footer from 'components/landing/footer/Footer';
 import Header from 'components/landing/header/Header';
 import React from 'react';
 import s from './Default.module.scss';
@@ -16,7 +16,7 @@ const Default: React.FC<Props> = ({ children, type }) => {
 		>
 			<Header type={type} />
 			<div className={s.Content}>{children}</div>
-			{/* <Footer type={type} /> */}
+			<Footer type={type} />
 		</div>
 	);
 };
