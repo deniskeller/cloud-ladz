@@ -17,7 +17,7 @@ const Main = () => {
 
 	return (
 		<>
-			<h1>Main page</h1>
+			<h1 style={{ color: 'white' }}>Main page</h1>
 
 			{/* <BaseInput
 				name='name'

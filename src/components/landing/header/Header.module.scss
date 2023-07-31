@@ -4,6 +4,11 @@
 	align-items: center;
 	min-height: em(88px);
 	padding: em(16px) em(30px);
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	z-index: 1;
 
 	@include iflaptop {
 		min-height: em(70px);

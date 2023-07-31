@@ -1,6 +1,4 @@
-import { ALL_ICONS } from '@constants/icons';
 import React from 'react';
-import { BaseIcon } from '..';
 import s from './BaseButton.module.scss';
 
 interface Props {
@@ -28,14 +26,6 @@ const BaseButton: React.FC<Props> = ({
 			style={style}
 		>
 			<div className={s.Title}>{title}</div>
-
-			{type == 'submit' ? (
-				<BaseIcon
-					icon={ALL_ICONS.ARROW}
-					viewBox='0 0 44 24'
-					className={s.IconSubmit}
-				/>
-			) : null}
 		</button>
 	);
 };
