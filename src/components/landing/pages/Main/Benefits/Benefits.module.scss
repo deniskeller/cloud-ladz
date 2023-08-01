@@ -1,0 +1,225 @@
+.Benefits {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	&_Wrapper {
+		position: relative;
+		padding: em(240px) 0 em(245px);
+
+		@include iflaptop {
+			padding: em(200px) 0 em(159px);
+		}
+
+		@include iftablet {
+			padding: em(147px) 0 em(143px);
+		}
+		@include ifmobile {
+			padding: em(80px) 0 em(115px);
+		}
+
+		.IconBefore {
+			position: absolute;
+
+			&_Desktop {
+				display: none;
+				@include ifdesktop {
+					display: block;
+					width: em(650px);
+					height: em(160px);
+					top: em(40px);
+					left: calc(50% - em(650px));
+				}
+			}
+
+			&_Mobile {
+				display: block;
+				@include ifdesktop {
+					display: none;
+				}
+
+				@include iflaptop {
+					width: em(432px);
+					height: em(160px);
+					top: 0;
+					left: em(80px);
+				}
+				@include iftablet {
+					width: em(303px);
+					height: em(117px);
+					top: 0;
+					left: em(80px);
+				}
+				@include ifmobile {
+					width: em(200px);
+					height: em(117px);
+					top: em(-30px);
+					left: em(30px);
+				}
+			}
+		}
+
+		.IconAfter {
+			position: absolute;
+			width: em(1238px);
+			height: em(145px);
+			bottom: em(40px);
+			left: 50%;
+			transform: translate(-50%, 0);
+			@include iflaptop {
+				width: em(900px);
+				height: em(107px);
+				bottom: em(40px);
+			}
+			@include iftablet {
+				width: em(708px);
+				height: em(83px);
+				bottom: em(30px);
+			}
+			@include ifmobile {
+				display: none;
+			}
+		}
+
+		.IconAfter2 {
+			display: none;
+			position: absolute;
+			width: em(328px);
+			height: em(55px);
+			bottom: em(30px);
+			left: 50%;
+			transform: translate(-50%, 0);
+			@include ifmobile {
+				display: block;
+			}
+		}
+	}
+
+	&_Image {
+		position: absolute;
+		width: em(1251px);
+		height: em(899px);
+		top: em(100px);
+		left: em(90px);
+		transform: scale(1, -1);
+		.Image {
+			image-rendering: pixelated;
+		}
+
+		@include iflaptop {
+			width: 100%;
+			top: em(90px);
+			left: 0;
+		}
+		@include iftablet {
+			width: em(768px);
+			top: em(-48px);
+			left: em(30px);
+			transform: rotate(180deg);
+		}
+		@include ifmobile {
+			display: none;
+		}
+	}
+
+	&_Title {
+		margin: 0 auto;
+		margin-bottom: em(50px);
+		position: relative;
+		z-index: 1;
+
+		@include iflaptop {
+			margin-bottom: em(40px);
+		}
+		@include iftablet {
+			margin-bottom: em(30px);
+		}
+		@include ifmobile {
+			margin-bottom: em(30px);
+		}
+
+		h2 {
+			color: $white;
+			font-family: $Grotesk;
+			font-size: em(46px);
+			font-style: normal;
+			font-weight: 800;
+			@include iflaptop {
+				font-size: em(42px);
+			}
+			@include iftablet {
+				font-size: em(36px);
+			}
+			@include ifmobile {
+				font-size: em(24px);
+			}
+		}
+	}
+
+	&_Items {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		gap: 0 em(145px);
+		max-width: em(1245px);
+		margin: 0 auto;
+		position: relative;
+		z-index: 1;
+		@include iflaptop {
+			grid-template-columns: 1fr 1fr;
+			gap: em(50px) em(105px);
+		}
+		@include iftablet {
+			grid-template-columns: 1fr 1fr;
+			gap: em(50px) em(105px);
+		}
+		@include ifmobile {
+			grid-template-columns: 1fr;
+			gap: em(30px) 0;
+		}
+
+		.Item {
+			display: flex;
+			flex-direction: column;
+			max-width: em(345px);
+			@include iflaptop {
+				&:last-child {
+					grid-column: 1 / -1;
+					margin: 0 auto;
+				}
+			}
+			@include iftablet {
+				max-width: em(300px);
+				&:last-child {
+					grid-column: 1 / -1;
+					margin: 0 auto;
+				}
+			}
+			@include ifmobile {
+			}
+
+			&_Number {
+				width: max-content;
+				margin-bottom: em(6px);
+				span {
+					font-size: em(32px);
+					font-style: normal;
+					font-weight: 300;
+					color: $violet;
+					text-shadow: 0 0 15px $violet;
+				}
+			}
+
+			&_Description {
+				color: $white;
+				font-size: em(24px);
+				font-style: normal;
+				font-weight: $normal;
+				@include iftablet {
+					font-size: em(20px);
+				}
+				@include ifmobile {
+					font-size: em(18px);
+				}
+			}
+		}
+	}
+}
