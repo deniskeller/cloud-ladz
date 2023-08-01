@@ -17,16 +17,6 @@
 
 	&_Image {
 		image-rendering: pixelated;
-		@include iflaptop {
-			background-size: contain !important;
-			background-position: -300px !important;
-			right: -500px !important;
-		}
-		@include iftablet {
-			background-position: right !important;
-		}
-		@include ifmobile {
-		}
 	}
 
 	&_Title {

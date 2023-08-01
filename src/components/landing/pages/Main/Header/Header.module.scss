@@ -1,0 +1,221 @@
+.HeaderWrapper {
+	position: relative;
+}
+
+.Header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: em(224px) 0 em(349px);
+
+	@include iflaptop {
+		padding: em(195px) 0 em(240px);
+	}
+	@include iftablet {
+		padding: em(295px) 0 em(301px);
+	}
+	@include ifmobile {
+		padding: em(145px) 0 em(140px);
+	}
+
+	&_Image {
+		image-rendering: pixelated;
+		z-index: 0;
+	}
+
+	&_Title {
+		position: relative;
+		z-index: 1;
+		max-width: em(1175px);
+		margin-bottom: em(30px);
+		@include iflaptop {
+			max-width: em(632px);
+		}
+		@include iftablet {
+			max-width: em(605px);
+		}
+		@include ifmobile {
+			max-width: em(288px);
+		}
+		h1 {
+			color: $white;
+			font-family: $Grotesk;
+			font-size: em(86px);
+			text-align: center;
+			font-weight: 800;
+			line-height: 100%;
+			@include iflaptop {
+				font-size: em(48px);
+			}
+			@include iftablet {
+				font-size: em(44px);
+			}
+			@include ifmobile {
+				font-size: em(32px);
+			}
+			span {
+				color: $yellow;
+			}
+		}
+	}
+
+	&_Subtitle {
+		position: relative;
+		z-index: 1;
+		margin-bottom: em(57px);
+		text-align: center;
+		@include iflaptop {
+			margin-bottom: em(70px);
+		}
+		@include iftablet {
+			margin-bottom: em(70px);
+		}
+		@include ifmobile {
+			max-width: em(328px);
+			margin-bottom: em(75px);
+		}
+		p {
+			color: $white;
+			font-size: em(24px);
+			font-weight: $normal;
+			@include iftablet {
+				font-size: em(20px);
+			}
+			@include ifmobile {
+				font-size: em(18px);
+			}
+		}
+	}
+
+	&_Button {
+		width: em(211px);
+		position: relative;
+		z-index: 1;
+		@include ifmobile {
+			width: em(200px);
+		}
+	}
+
+	.IconRoket {
+		position: absolute;
+		z-index: 1;
+		width: em(233px);
+		height: em(216px);
+		top: em(415px);
+		right: em(220px);
+		@include iflaptop {
+			width: em(161px);
+			height: em(151px);
+			top: em(392px);
+			right: em(49px);
+		}
+		@include iftablet {
+			width: em(143px);
+			height: em(151px);
+			top: em(440px);
+			right: em(-14px);
+		}
+		@include ifmobile {
+			width: em(102px);
+			height: em(108px);
+			top: em(365px);
+			right: 0;
+		}
+	}
+
+	.IconStar {
+		position: absolute;
+		z-index: 1;
+		display: none;
+
+		@include ifdesktop {
+			display: block;
+		}
+	}
+
+	.IconStar1 {
+		width: em(65px);
+		height: em(52px);
+		top: em(114px);
+		right: em(280px);
+	}
+
+	.IconStar2 {
+		width: em(28px);
+		height: em(22px);
+		top: em(114px);
+		left: em(192px);
+		transform: rotate(14.196deg);
+	}
+
+	.IconStar3 {
+		width: em(56px);
+		height: em(45px);
+		top: em(335px);
+		left: em(266px);
+	}
+
+	.IconStar4 {
+		width: em(41px);
+		height: em(33px);
+		top: em(575px);
+		left: em(61px);
+		transform: rotate(28.72deg);
+	}
+
+	.IconStar5 {
+		width: em(45px);
+		height: em(37px);
+		top: em(362px);
+		right: em(119px);
+		transform: rotate(16.984deg);
+	}
+
+	.IconLine {
+		position: absolute;
+		z-index: 0;
+		left: 50%;
+		transform: translate(-50%, 0);
+
+		&_Desktop {
+			display: none;
+			width: em(1409px);
+			height: em(352px);
+			bottom: em(30px);
+			@include ifdesktop {
+				display: block;
+			}
+		}
+
+		&_Laptop {
+			display: none;
+			width: em(864px);
+			height: em(275px);
+			bottom: em(15px);
+			@include iflaptop {
+				display: block;
+			}
+		}
+
+		&_Tablet {
+			display: none;
+			width: em(673px);
+			height: em(314px);
+			bottom: em(15px);
+
+			@include iftablet {
+				display: block;
+			}
+		}
+
+		&_Modile {
+			display: none;
+			width: em(336px);
+			height: em(133px);
+			bottom: em(34px);
+			@include ifmobile {
+				display: block;
+			}
+		}
+	}
+}

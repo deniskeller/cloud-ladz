@@ -1,3 +1,4 @@
+import { Header } from 'components/landing/pages/Main';
 import React from 'react';
 
 interface IValue {
@@ -17,8 +18,7 @@ const Main = () => {
 
 	return (
 		<>
-			<h1 style={{ color: 'white' }}>Main page</h1>
-
+			<Header />
 			{/* <BaseInput
 				name='name'
 				label='Your name'

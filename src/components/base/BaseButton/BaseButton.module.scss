@@ -1,32 +1,45 @@
 //general
 .Button {
 	font-size: 100%;
+	line-height: 100%;
 	width: max-content;
 	height: em(58px);
-	border-radius: em(4px);
+	border-radius: em(34px);
 	display: flex;
-	flex-direction: row;
 	justify-content: center;
 	align-items: center;
-	padding: em(10px) em(50px);
+	padding: em(16px) em(32px);
 	@extend %button;
+	background: #bed252;
+
+	&:hover {
+		background: #cee35b;
+		.Title {
+			color: #775be8;
+		}
+	}
+
+	&:active {
+		background: #b7ca4e;
+		.Title {
+			color: #4c33b0;
+		}
+	}
 
 	@include iftablet {
-		height: em(44px);
-		padding: em(10px) em(25px);
+		padding: em(16px) em(20px);
 	}
 	@include ifmobile {
 		height: em(44px);
-		padding: em(10px) em(25px);
+		padding: em(11px) em(20px);
 	}
 
 	.Title {
-		display: flex;
-		font-size: em(20px);
-		font-weight: 500;
-		line-height: 100%;
-		color: $white;
-		font-family: 'Montserrat', sans-serif;
+		font-size: em(18px);
+		font-weight: 800;
+		letter-spacing: 0.99px;
+		color: #5f41d4;
+		font-family: $Grotesk;
 
 		@include iftablet {
 			font-size: em(16px);
@@ -44,133 +57,4 @@
 	cursor: not-allowed;
 	pointer-events: none;
 	opacity: 0.4;
-}
-
-//empty
-.Button_empty {
-	background: none;
-	border: 1px solid $white;
-	box-sizing: border-box;
-	&:hover {
-		border-width: 2px;
-	}
-
-	// &:active {
-	// }
-}
-
-//orange
-.Button_orange {
-	background: $orange;
-	border: 1px solid $orange;
-	&:hover {
-		background: #967e2f;
-	}
-
-	&:active {
-		background: #c2a239;
-	}
-}
-
-//white
-.Button_white {
-	background: $white;
-
-	.Title {
-		color: $blue;
-	}
-	&:hover {
-		background: rgba(255, 255, 255, 0.7);
-		box-shadow: 3px 3px 9px rgba(81, 151, 219, 0.4);
-	}
-
-	&:active {
-		background: rgba(255, 255, 255, 0.4);
-		box-shadow: 3px 3px 9px rgba(81, 151, 219, 0.4);
-	}
-}
-
-//green
-.Button_green {
-	background: #217c51;
-	height: em(44px);
-	padding: em(10px) em(24px);
-	@include ifmobile {
-		padding: em(8px) em(18px);
-		height: em(36px);
-	}
-	.Title {
-		font-weight: 500;
-		font-size: em(16px);
-		line-height: 150%;
-		color: $white;
-		@include ifmobile {
-			font-size: em(14px);
-		}
-	}
-	// &:hover {
-	// 	background: rgba(255, 255, 255, 0.7);
-	// 	box-shadow: 3px 3px 9px rgba(81, 151, 219, 0.4);
-	// }
-
-	// &:active {
-	// 	background: rgba(255, 255, 255, 0.4);
-	// 	box-shadow: 3px 3px 9px rgba(81, 151, 219, 0.4);
-	// }
-}
-
-//submit
-.Button_submit {
-	background: transparent;
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	cursor: pointer;
-	opacity: 0.7;
-	width: max-content;
-	height: auto;
-	border-radius: 0;
-	padding: 0;
-	@extend %button;
-
-	&:hover {
-		opacity: 1;
-	}
-
-	.Title {
-		font-weight: 300;
-		font-size: em(22px);
-		line-height: 140%;
-		color: $orange;
-		white-space: nowrap;
-		@include iflaptop {
-			font-size: em(20px);
-		}
-		@include iftablet {
-			font-size: em(18px);
-		}
-		@include ifmobile {
-			font-size: em(18px);
-		}
-	}
-	.IconSubmit {
-		width: em(50px);
-		height: em(22px);
-		margin-left: em(20px);
-		@media only screen and (max-width: 1550px) {
-			width: em(40px);
-			height: em(16px);
-			margin-left: em(10px);
-		}
-
-		@include iflaptop {
-		}
-		@include iftablet {
-		}
-		@include ifmobile {
-		}
-	}
-	&:hover {
-		opacity: 1;
-	}
 }
