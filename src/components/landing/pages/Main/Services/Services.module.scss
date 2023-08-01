@@ -25,6 +25,51 @@
 			}
 		}
 	}
+
+	&_Pictures {
+		position: relative;
+		width: 100%;
+		height: em(710px);
+		@media only screen and (min-width: 769px) and (max-width: 1699px) {
+			width: em(924px);
+			height: em(946px);
+			margin: 0 auto;
+		}
+		@include iftablet {
+			height: em(830px);
+		}
+		@include ifmobile {
+			height: em(1016px);
+		}
+
+		.Image1 {
+			display: none;
+			@media only screen and (min-width: 1700px) {
+				display: block;
+			}
+		}
+
+		.Image2 {
+			display: none;
+			@media only screen and (min-width: 769px) and (max-width: 1699px) {
+				display: block;
+			}
+		}
+
+		.Image3 {
+			display: none;
+			@include iftablet {
+				display: block;
+			}
+		}
+
+		.Image4 {
+			display: none;
+			@include ifmobile {
+				display: block;
+			}
+		}
+	}
 }
 
 @include iflaptop {
