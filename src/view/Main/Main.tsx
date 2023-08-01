@@ -1,4 +1,4 @@
-import { Header } from 'components/landing/pages/Main';
+import { About, Header } from 'components/landing/pages/Main';
 import React from 'react';
 
 interface IValue {
@@ -19,6 +19,7 @@ const Main = () => {
 	return (
 		<>
 			<Header />
+			<About />
 			{/* <BaseInput
 				name='name'
 				label='Your name'

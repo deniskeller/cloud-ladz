@@ -1,0 +1,209 @@
+.About {
+	position: relative;
+	@include iflaptop {
+		padding: em(30px) 0 em(46px);
+	}
+	@include iftablet {
+		padding: em(25px) 0 em(40px);
+	}
+	@include ifmobile {
+		padding: 0 0 em(15px);
+	}
+
+	&_Logo {
+		width: em(345px);
+		height: em(41px);
+		margin-bottom: em(50px);
+
+		@include iflaptop {
+			width: em(319px);
+			height: em(38px);
+			margin-bottom: em(40px);
+		}
+		@include iftablet {
+			width: em(286px);
+			height: em(34px);
+			margin-bottom: em(30px);
+		}
+		@include ifmobile {
+			width: em(286px);
+			height: em(34px);
+			margin-bottom: em(30px);
+		}
+	}
+
+	&_Description {
+		max-width: em(1322px);
+		margin-bottom: em(100px);
+		@include iflaptop {
+			margin-bottom: em(40px);
+		}
+		@include iftablet {
+			margin-bottom: em(40px);
+		}
+		@include ifmobile {
+			margin-bottom: em(30px);
+		}
+		p {
+			color: $white;
+			font-size: em(24px);
+			font-style: normal;
+			font-weight: $normal;
+			line-height: normal;
+			@include iflaptop {
+				font-size: em(24px);
+			}
+			@include iftablet {
+				font-size: em(20px);
+			}
+			@include ifmobile {
+				font-size: em(18px);
+			}
+		}
+	}
+
+	&_Content {
+		display: grid;
+		grid-template-columns: em(540px) 1fr;
+		gap: 0 em(200px);
+		position: relative;
+		@include iflaptop {
+			grid-template-columns: em(500px) 1fr;
+			gap: 0 em(49px);
+		}
+		@include iftablet {
+			grid-template-columns: em(425px) 1fr;
+			gap: 0 em(40px);
+		}
+		@include ifmobile {
+			grid-template-columns: 1fr;
+			gap: em(10px) 0;
+		}
+
+		&_Links {
+			display: flex;
+			flex-direction: column;
+			position: relative;
+			z-index: 10;
+
+			.Question {
+				margin-bottom: em(32px);
+				@include iftablet {
+					margin-bottom: em(30px);
+				}
+				@include ifmobile {
+					max-width: em(320px);
+					margin-bottom: em(30px);
+				}
+				h3 {
+					font-family: $Grotesk;
+					font-size: em(24px);
+					font-style: normal;
+					font-weight: 800;
+					color: $white;
+				}
+			}
+			.Links {
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				gap: em(18px) em(80px);
+				list-style: none;
+				@include iflaptop {
+					grid-template-columns: 1fr 1fr;
+					gap: em(18px) em(40px);
+				}
+				@include iftablet {
+					grid-template-columns: 1fr 1fr;
+					gap: em(18px) em(80px);
+				}
+				@include ifmobile {
+					grid-template-columns: 1fr;
+					gap: em(22px) 0;
+				}
+
+				&_Item {
+					display: flex;
+					flex-direction: row;
+					align-items: center;
+
+					&_Icon {
+						margin-right: em(16px);
+					}
+					&_Icon1,
+					&_Icon3 {
+						width: em(55px);
+						height: em(48px);
+						@include iftablet {
+							width: em(50px);
+							height: em(44px);
+						}
+						@include ifmobile {
+							width: em(50px);
+							height: em(44px);
+						}
+					}
+					&_Icon2,
+					&_Icon4 {
+						width: em(63px);
+						height: em(60px);
+						@include iftablet {
+							width: em(52px);
+							height: em(50px);
+						}
+						@include ifmobile {
+							width: em(52px);
+							height: em(50px);
+						}
+					}
+
+					&_Name {
+						a {
+							color: $white;
+							font-size: em(24px);
+							font-style: normal;
+							font-weight: $normal;
+							@include iftablet {
+								font-size: em(20px);
+							}
+							@include ifmobile {
+								font-size: em(18px);
+							}
+						}
+					}
+				}
+			}
+		}
+
+		&_Image {
+			position: relative;
+			width: 100%;
+			height: 100%;
+
+			svg {
+				width: em(865px);
+				height: em(349px);
+				position: absolute;
+				right: 0;
+				bottom: 0;
+				@media only screen and (min-width: 1025px) and (max-width: 1600px) {
+					width: em(700px);
+					height: em(250px);
+				}
+				@include iflaptop {
+					width: em(375px);
+					height: em(211px);
+					bottom: em(-20px);
+				}
+				@include iftablet {
+					width: em(245px);
+					height: em(143px);
+				}
+				@include ifmobile {
+					position: relative;
+					width: 100%;
+					height: em(132px);
+				}
+			}
+		}
+	}
+}
