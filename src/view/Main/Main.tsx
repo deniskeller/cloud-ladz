@@ -1,4 +1,9 @@
-import { About, Benefits, Header } from 'components/landing/pages/Main';
+import {
+	About,
+	Benefits,
+	Header,
+	Services,
+} from 'components/landing/pages/Main';
 import React from 'react';
 
 interface IValue {
@@ -21,6 +26,7 @@ const Main = () => {
 			<Header />
 			<About />
 			<Benefits />
+			<Services />
 			{/* <BaseInput
 				name='name'
 				label='Your name'

@@ -1,0 +1,35 @@
+.Services {
+	&_Title {
+		margin-bottom: em(50px);
+		@include iflaptop {
+			margin-bottom: em(30px);
+		}
+		@include iftablet {
+			margin-bottom: em(78px);
+		}
+		@include ifmobile {
+			margin-bottom: em(43px);
+		}
+		h2 {
+			color: $white;
+			font-family: $Grotesk;
+			font-size: em(46px);
+			@include iflaptop {
+				font-size: em(42px);
+			}
+			@include iftablet {
+				font-size: em(36px);
+			}
+			@include ifmobile {
+				font-size: em(24px);
+			}
+		}
+	}
+}
+
+@include iflaptop {
+}
+@include iftablet {
+}
+@include ifmobile {
+}
