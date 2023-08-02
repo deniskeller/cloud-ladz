@@ -1,12 +1,14 @@
 import { BaseButton, BaseIcon } from '@base/index';
 import { ALL_ICONS } from '@constants/icons';
-import Image from 'next/image';
-import React from 'react';
+import { RequestPopup } from 'components/landing/modals';
+import React, { useState } from 'react';
 import s from './Header.module.scss';
 
 interface Props {}
 
 const Header: React.FC<Props> = () => {
+	const [popup, setPopup] = useState(false);
+
 	return (
 		<div className={s.HeaderWrapper}>
 			<div className={s.Header}>
@@ -21,7 +23,11 @@ const Header: React.FC<Props> = () => {
 					<p>The Fat Merchant is gone, the Cloud Ladz are back!</p>
 				</div>
 
-				<BaseButton title='SEND REQUEST' className={s.Header_Button} />
+				<BaseButton
+					title='SEND REQUEST'
+					className={s.Header_Button}
+					onClick={() => setPopup(true)}
+				/>
 
 				<BaseIcon
 					viewBox='0 0 67 53'
@@ -191,6 +197,7 @@ const Header: React.FC<Props> = () => {
 					</defs>
 				</svg>
 			</div>
+			<RequestPopup popup={popup} onClick={setPopup} />
 		</div>
 	);
 };

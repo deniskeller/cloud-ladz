@@ -1,0 +1,126 @@
+.Form {
+	position: relative;
+	border-radius: em(56px);
+	background: linear-gradient(136deg, #5f41d4 0%, rgba(40, 29, 83, 0) 110%);
+	width: 100%;
+	padding: em(60px) em(170px) em(72px);
+
+	@include iflaptop {
+		padding: em(60px) em(60px) em(101px);
+		background: linear-gradient(134deg, #5f41d4 0%, #281d53 100%);
+	}
+	@include iftablet {
+		padding: em(40px) em(32px) em(54px);
+		background: linear-gradient(134deg, #5f41d4 0%, #281d53 100%);
+	}
+	@include ifmobile {
+		padding: em(30px) em(20px) em(154px);
+		border-radius: em(16px);
+		background: linear-gradient(134deg, #5f41d4 0%, #281d53 100%);
+	}
+
+	&_Image {
+		position: absolute;
+		bottom: em(44px);
+		right: em(48px);
+		width: em(171px);
+		height: em(104px);
+		svg {
+			width: 100%;
+			height: 100%;
+		}
+		@include iftablet {
+			bottom: em(20px);
+			right: em(36px);
+		}
+		@include ifmobile {
+			bottom: em(20px);
+			right: 50%;
+			transform: translate(50%, 0);
+		}
+	}
+
+	&_Title {
+		margin-bottom: em(20px);
+		@include iftablet {
+			margin-bottom: em(16px);
+		}
+		@include ifmobile {
+			margin-bottom: em(16px);
+		}
+		h2 {
+			color: $white;
+			font-family: $Grotesk;
+			font-size: em(46px);
+			font-style: normal;
+			font-weight: 800;
+			line-height: 112%;
+			@include iflaptop {
+				font-size: em(42px);
+			}
+			@include iftablet {
+				font-size: em(30px);
+			}
+			@include ifmobile {
+				font-size: em(22px);
+			}
+		}
+	}
+
+	&_Subtitle {
+		margin-bottom: em(92px);
+		@include iflaptop {
+			margin-bottom: em(77px);
+		}
+		@include iftablet {
+			margin-bottom: em(62px);
+		}
+		@include ifmobile {
+			margin-bottom: em(34px);
+		}
+		p {
+			color: $white;
+			font-size: em(20px);
+			font-weight: $normal;
+			@include iflaptop {
+				font-size: em(18px);
+			}
+			@include iftablet {
+				font-size: em(18px);
+			}
+			@include ifmobile {
+				font-size: em(18px);
+			}
+		}
+	}
+
+	&_Content {
+		max-width: em(798px);
+		margin: 0 auto;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: em(36px) em(40px);
+		grid-template-rows: max-content;
+		@include iflaptop {
+			max-width: em(741px);
+		}
+		@include iftablet {
+			max-width: em(580px);
+		}
+		@include ifmobile {
+			grid-template-columns: 1fr;
+			gap: em(36px) 0;
+		}
+
+		.Button {
+			width: 100%;
+		}
+	}
+}
+
+@include iflaptop {
+}
+@include iftablet {
+}
+@include ifmobile {
+}

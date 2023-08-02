@@ -1,5 +1,6 @@
 export enum ComponentsIcons {
 	CHECK = 'CHECK',
+	CLOSE = 'CLOSE',
 }
 
 export const componentsIcons = {
@@ -11,6 +12,18 @@ export const componentsIcons = {
 				strokeLinecap='round'
 				strokeLinejoin='round'
 			/>
+		</>
+	),
+	[ComponentsIcons.CLOSE]: (
+		<>
+			<path
+				d='M10 30L30 10M10 10L30 30'
+				stroke='#BED252'
+				stroke-width='2'
+				stroke-linecap='round'
+				stroke-linejoin='round'
+			/>
+			;
 		</>
 	),
 };

@@ -4,7 +4,7 @@
 	min-height: 100vh;
 	height: 100%;
 	overflow-y: auto;
-	background: rgba(13, 16, 38, 0.3);
+	background: rgba(0, 0, 0, 0.3);
 	position: fixed;
 	z-index: 1000000;
 	top: 0;
@@ -19,68 +19,57 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	padding: em(30px) em(8px);
+	padding: em(30px) em(10px);
+	@include ifmobile {
+		padding: em(30px) em(4px);
+	}
 }
 
 .Popup {
 	position: relative;
 	width: 100%;
+	max-width: em(1201px);
 	height: max-content;
 	margin: 0 auto;
-	background: #2d2d2d;
+	background: linear-gradient(134deg, #5f41d4 0%, #281d53 100%);
 	box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.06),
 		0px 4px 6px -1px rgba(0, 0, 0, 0.08);
-	border-radius: em(10px);
 	overflow: hidden;
+	border-radius: em(56px);
+	@include iflaptop {
+		max-width: em(924px);
+	}
+	@include iftablet {
+		max-width: em(708px);
+	}
+	@include ifmobile {
+		max-width: 100%;
+		border-radius: em(16px);
+	}
 
 	&_Close {
 		position: absolute;
 		z-index: 1000;
-		top: em(30px);
-		right: em(30px);
-		width: em(35px);
-		height: em(35px);
+		top: em(32px);
+		right: em(32px);
+		width: em(40px);
+		height: em(40px);
 		cursor: pointer;
 		transition: all 0.6s ease-in-out;
 		&:hover {
 			transform: rotate(90deg);
 		}
-		@include iflaptop {
-			top: em(20px);
-			right: em(20px);
-		}
 		@include iftablet {
-			top: em(20px);
-			right: em(20px);
+			top: em(22px);
+			right: em(22px);
 		}
 		@include ifmobile {
 			width: em(24px);
 			height: em(24px);
-			top: em(16px);
-			right: em(16px);
+			top: em(10px);
+			right: em(10px);
 		}
 	}
-}
-
-.Popup_large {
-	max-width: em(834px);
-	@include iflaptop {
-		max-width: em(600px);
-	}
-	@include iftablet {
-		max-width: em(600px);
-	}
-	@include ifmobile {
-		max-width: em(340px);
-	}
-}
-
-.Popup_middle {
-	max-width: em(480px);
-}
-
-.Popup_small {
-	max-width: em(384px);
 }
 
 .Visible {
