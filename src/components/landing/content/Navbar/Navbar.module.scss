@@ -1,0 +1,78 @@
+.Navbar {
+	border-bottom: 2px solid #bed252;
+	padding-top: em(118px);
+	margin-bottom: em(82px);
+
+	@include iflaptop {
+		margin-bottom: em(70px);
+	}
+
+	@include iftablet {
+		padding-top: em(100px);
+		margin-bottom: em(78px);
+	}
+	@include ifmobile {
+		padding-top: em(85px);
+		margin-bottom: em(60px);
+	}
+	&_Container {
+		width: 100%;
+		max-width: em(450px);
+		margin: 0 auto;
+		@include ifmobile {
+			max-width: em(328px);
+		}
+	}
+
+	&_List {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		.Link {
+			height: em(45px);
+			position: relative;
+			@include ifmobile {
+				height: em(36px);
+			}
+			&::after {
+				content: '';
+				position: absolute;
+				bottom: em(-2px);
+				left: 0;
+				height: 2px;
+				background-color: $violet;
+			}
+			a {
+				color: $black;
+				font-size: em(18px);
+				font-style: normal;
+				font-weight: 400;
+				line-height: normal;
+				position: relative;
+				@include ifmobile {
+					font-size: em(14px);
+				}
+
+				&:hover {
+					color: $violet;
+				}
+			}
+			&_Active {
+				a {
+					color: $violet;
+				}
+				&::after {
+					animation: bottomLine 0.3s linear forwards;
+				}
+			}
+		}
+	}
+}
+@keyframes bottomLine {
+	0% {
+		width: 0%;
+	}
+	100% {
+		width: 100%;
+	}
+}

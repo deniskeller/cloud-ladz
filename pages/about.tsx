@@ -1,5 +1,5 @@
 import { Default } from '@layouts/index';
-import About from '@view/About/About';
+import { About } from '@view/index';
 
 const AboutPage = () => {
 	return (

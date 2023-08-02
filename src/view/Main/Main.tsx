@@ -8,8 +8,9 @@ import {
 	PaymentSchemes,
 	Services,
 } from 'components/landing/pages/Main';
+import React from 'react';
 
-const Main = () => {
+const Main: React.FC = () => {
 	return (
 		<>
 			<Header />
