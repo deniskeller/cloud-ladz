@@ -1,5 +1,4 @@
 import { BaseContainer } from '@base/index';
-import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 import { Logo } from '../content';
@@ -60,18 +59,16 @@ const links: Links[] = [
 
 const Footer: React.FC<Props> = ({ className = '', type }) => {
 	return (
-		<div className={s.FooterWrapper}>
-			{type !== 'light' ? (
-				<Image
-					src='/images/pictures/footer-bg.png'
-					fill
-					loading='lazy'
-					alt={'Footer bg'}
-					unoptimized={true}
-					className={s.FooterWrapper_Image}
-				/>
-			) : null}
-
+		<div
+			className={s.FooterWrapper}
+			style={{
+				backgroundImage: `${
+					type !== 'light'
+						? 'url(/images/pictures/footer-bg.png)'
+						: 'transparent'
+				}`,
+			}}
+		>
 			<BaseContainer>
 				<div
 					className={`${s.Footer} ${className} ${

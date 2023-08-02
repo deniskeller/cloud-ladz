@@ -5,6 +5,12 @@
 	align-items: center;
 	padding: em(249px) 0 em(293px);
 
+	background-image: url('/images/pictures/about-header-bg.png');
+	background-repeat: no-repeat;
+	background-position: bottom;
+	background-size: cover;
+	image-rendering: pixelated;
+
 	@include iflaptop {
 		padding: em(300px) 0 em(394px);
 	}
@@ -12,11 +18,8 @@
 		padding: em(454px) 0 em(438px);
 	}
 	@include ifmobile {
+		image-rendering: initial;
 		padding: em(224px) 0 em(224px);
-	}
-
-	&_Image {
-		image-rendering: pixelated;
 	}
 
 	&_Title {

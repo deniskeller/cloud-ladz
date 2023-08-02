@@ -13,6 +13,7 @@
 	}
 	@include ifmobile {
 		background-image: url('/images/pictures/main-header-bg-4.png');
+		image-rendering: initial;
 	}
 }
 
@@ -30,38 +31,6 @@
 	}
 	@include ifmobile {
 		padding: em(145px) 0 em(140px);
-	}
-
-	&_Image {
-		image-rendering: pixelated;
-		z-index: 0;
-		&_Desktop {
-			display: none;
-			@include ifdesktop {
-				display: block;
-			}
-		}
-
-		&_Laptop {
-			display: none;
-			@include iflaptop {
-				display: block;
-			}
-		}
-
-		&_Tablet {
-			display: none;
-			@include iftablet {
-				display: block;
-			}
-		}
-
-		&_Mobile {
-			display: none;
-			@include ifmobile {
-				display: block;
-			}
-		}
 	}
 
 	&_Title {
