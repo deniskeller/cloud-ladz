@@ -1,0 +1,64 @@
+.BaseAlert {
+	width: 100%;
+	position: fixed;
+	z-index: 9999;
+	bottom: em(100px);
+	left: calc(50vw - em(300px));
+	@include ifmobile {
+		left: calc(50vw - em(171px));
+	}
+
+	&_Alert {
+		width: 100%;
+		max-width: em(600px);
+		position: absolute;
+		transition: all 0.5s ease-out;
+		padding: em(10px) em(16px);
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		border-radius: em(8px);
+		background: linear-gradient(180deg, #bed252 0%, #fff 100%);
+		box-shadow: 0px 6px 10px 0px rgba(190, 210, 82, 0.5);
+		@include ifmobile {
+			max-width: em(342px);
+			padding: em(10px) em(16px) em(10px) 0;
+		}
+	}
+
+	&_Icon {
+		cursor: pointer;
+		width: em(50px);
+		height: em(50px);
+		margin-right: em(6px);
+	}
+
+	&_Content {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+
+		.Text {
+			width: max-content;
+			max-width: em(440px);
+			line-height: 100%;
+			@include ifmobile {
+				max-width: em(240px);
+			}
+			span {
+				color: #5f41d4;
+				font-family: 'DM Sans', sans-serif;
+				font-size: em(12px);
+				font-style: normal;
+				font-weight: 400;
+				line-height: normal;
+			}
+		}
+	}
+
+	&_Close {
+		cursor: pointer;
+		width: em(24px);
+		height: em(24px);
+	}
+}

@@ -1,5 +1,6 @@
 import { BaseButton, BaseContainer, BaseInput } from '@base/index';
 import React from 'react';
+import { toast } from 'react-hot-toast';
 import s from './Form.module.scss';
 
 interface IValue {
@@ -24,6 +25,12 @@ const Form: React.FC = () => {
 	const submitHandler = (e: { preventDefault: () => void }) => {
 		e.preventDefault();
 		setValue({ name: '', email: '', website: '', company_name: '' });
+		setTimeout(() => {
+			toast.success(
+				'Thank you! Data sent successfully. We’ll get back to you as soon as possible.',
+				{ duration: 3000000 }
+			);
+		}, 500);
 	};
 
 	return (
@@ -746,9 +753,9 @@ const Form: React.FC = () => {
 								width='531.235'
 								height='236.844'
 								filterUnits='userSpaceOnUse'
-								color-interpolation-filters='sRGB'
+								colorInterpolationFilters='sRGB'
 							>
-								<feFlood flood-opacity='0' result='BackgroundImageFix' />
+								<feFlood floodOpacity='0' result='BackgroundImageFix' />
 								<feBlend
 									mode='normal'
 									in='SourceGraphic'
@@ -1287,9 +1294,9 @@ const Form: React.FC = () => {
 								width='195.022'
 								height='95.7965'
 								filterUnits='userSpaceOnUse'
-								color-interpolation-filters='sRGB'
+								colorInterpolationFilters='sRGB'
 							>
-								<feFlood flood-opacity='0' result='BackgroundImageFix' />
+								<feFlood floodOpacity='0' result='BackgroundImageFix' />
 								<feBlend
 									mode='normal'
 									in='SourceGraphic'

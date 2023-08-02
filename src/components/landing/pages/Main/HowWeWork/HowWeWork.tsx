@@ -26,8 +26,8 @@ const HowWeWork: React.FC = () => {
 						<path
 							d='M1 0.000488281L1 87.9458L34.7537 121.961H92'
 							stroke='white'
-							stroke-width='1.00599'
-							stroke-dasharray='5.03 5.03'
+							strokeWidth='1.00599'
+							strokeDasharray='5.03 5.03'
 						/>
 						<path
 							d='M1.49805 103.516V122H19.8401L1.49805 103.516Z'
@@ -67,8 +67,8 @@ const HowWeWork: React.FC = () => {
 								<path
 									d='M2 1C14.3126 29.8399 81.7504 85.9142 253 79.4922'
 									stroke='#BED252'
-									stroke-width='4'
-									stroke-dasharray='6 6'
+									strokeWidth='4'
+									strokeDasharray='6 6'
 								/>
 							</svg>
 
@@ -81,8 +81,8 @@ const HowWeWork: React.FC = () => {
 								<path
 									d='M2 1C6.85638 24.364 33.4553 69.7913 101 64.5886'
 									stroke='#BED252'
-									stroke-width='4'
-									stroke-dasharray='6 6'
+									strokeWidth='4'
+									strokeDasharray='6 6'
 								/>
 							</svg>
 						</div>
@@ -118,8 +118,8 @@ const HowWeWork: React.FC = () => {
 								<path
 									d='M2 1C14.3126 29.8399 81.7504 85.9142 253 79.4922'
 									stroke='#BED252'
-									stroke-width='4'
-									stroke-dasharray='6 6'
+									strokeWidth='4'
+									strokeDasharray='6 6'
 								/>
 							</svg>
 
@@ -132,8 +132,8 @@ const HowWeWork: React.FC = () => {
 								<path
 									d='M2 1C6.85638 24.364 33.4553 69.7913 101 64.5886'
 									stroke='#BED252'
-									stroke-width='4'
-									stroke-dasharray='6 6'
+									strokeWidth='4'
+									strokeDasharray='6 6'
 								/>
 							</svg>
 						</div>
@@ -173,7 +173,7 @@ const HowWeWork: React.FC = () => {
 						<path
 							d='M650 0V50.3556L618.199 85.5768H1V136'
 							stroke='white'
-							stroke-dasharray='5.19 5.19'
+							strokeDasharray='5.19 5.19'
 						/>
 						<path d='M650.117 68V87.117H631L650.117 68Z' fill='white' />
 					</svg>
@@ -191,8 +191,8 @@ const HowWeWork: React.FC = () => {
 						<path
 							d='M431.002 0V63.0104L395.849 98.1243H1V162'
 							stroke='white'
-							stroke-width='1.03812'
-							stroke-dasharray='5.19 5.19'
+							strokeWidth='1.03812'
+							strokeDasharray='5.19 5.19'
 						/>
 					</svg>
 				</div>

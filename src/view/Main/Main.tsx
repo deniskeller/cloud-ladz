@@ -1,3 +1,4 @@
+import { BaseAlert } from '@base/index';
 import {
 	About,
 	Benefits,
@@ -18,6 +19,7 @@ const Main = () => {
 			<HowWeWork />
 			<Services />
 			<PaymentSchemes />
+			<BaseAlert />
 		</>
 	);
 };

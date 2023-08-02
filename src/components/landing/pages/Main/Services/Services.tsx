@@ -12,41 +12,36 @@ const Services: React.FC = () => {
 				</div>
 
 				<div className={s.Services_Pictures}>
-					<div className={s.Image1}>
-						<Image
-							src='/images/pictures/services-pictures-1.png'
-							fill
-							alt={''}
-							unoptimized={true}
-						/>
-					</div>
+					<Image
+						src='/images/pictures/services-pictures-1.png'
+						fill
+						alt={''}
+						unoptimized={true}
+						className={s.Image1}
+					/>
+					<Image
+						src='/images/pictures/services-pictures-2.png'
+						fill
+						alt={''}
+						unoptimized={true}
+						className={s.Image2}
+					/>
 
-					<div className={s.Image2}>
-						<Image
-							src='/images/pictures/services-pictures-2.png'
-							fill
-							alt={''}
-							unoptimized={true}
-						/>
-					</div>
+					<Image
+						src='/images/pictures/services-pictures-3.png'
+						fill
+						alt={''}
+						unoptimized={true}
+						className={s.Image3}
+					/>
 
-					<div className={s.Image3}>
-						<Image
-							src='/images/pictures/services-pictures-3.png'
-							fill
-							alt={''}
-							unoptimized={true}
-						/>
-					</div>
-
-					<div className={s.Image4}>
-						<Image
-							src='/images/pictures/services-pictures-4.png'
-							fill
-							alt={''}
-							unoptimized={true}
-						/>
-					</div>
+					<Image
+						src='/images/pictures/services-pictures-4.png'
+						fill
+						alt={''}
+						unoptimized={true}
+						className={s.Image4}
+					/>
 				</div>
 			</BaseContainer>
 		</div>

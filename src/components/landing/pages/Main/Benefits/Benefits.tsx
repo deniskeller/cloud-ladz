@@ -20,8 +20,8 @@ const Benefits: React.FC = () => {
 					<path
 						d='M2.99823 0V63.0104L38.1511 98.1243H649V159.5'
 						stroke='white'
-						stroke-width='1.03812'
-						stroke-dasharray='5.19 5.19'
+						strokeWidth='1.03812'
+						strokeDasharray='5.19 5.19'
 					/>
 				</svg>
 
@@ -40,8 +40,8 @@ const Benefits: React.FC = () => {
 					<path
 						d='M2.99823 0V63.0104L38.1511 98.1243H433V162'
 						stroke='white'
-						stroke-width='1.03812'
-						stroke-dasharray='5.19 5.19'
+						strokeWidth='1.03812'
+						strokeDasharray='5.19 5.19'
 					/>
 				</svg>
 
@@ -106,14 +106,14 @@ const Benefits: React.FC = () => {
 					<path
 						d='M619.75 146.005V60.4346'
 						stroke='white'
-						stroke-width='0.999366'
-						stroke-dasharray='5 5'
+						strokeWidth='0.999366'
+						strokeDasharray='5 5'
 					/>
 					<path
 						d='M1 1.00586C158.303 27.2483 373.35 58.6656 619.25 58.6656C858.654 58.6656 1095 16.7608 1239 1.00586'
 						stroke='white'
-						stroke-width='0.999366'
-						stroke-dasharray='5 5'
+						strokeWidth='0.999366'
+						strokeDasharray='5 5'
 					/>
 				</svg>
 
@@ -128,14 +128,14 @@ const Benefits: React.FC = () => {
 					<path
 						d='M165 56L165 32.1445'
 						stroke='white'
-						stroke-width='0.999366'
-						stroke-dasharray='5 5'
+						strokeWidth='0.999366'
+						strokeDasharray='5 5'
 					/>
 					<path
 						d='M1 1C42.6763 13.6667 99.6516 28.8313 164.801 28.8313C228.23 28.8313 290.847 8.60464 329 1'
 						stroke='white'
-						stroke-width='0.999366'
-						stroke-dasharray='5 5'
+						strokeWidth='0.999366'
+						strokeDasharray='5 5'
 					/>
 				</svg>
 			</div>

@@ -1,5 +1,8 @@
 import { BaseButton, BaseInput, BasePopup } from '@base/index';
+import { useAppDispatch } from '@hooks/redux';
+import { alertSlice } from '@store/alerts/reducer';
 import React from 'react';
+import { toast } from 'react-hot-toast';
 import s from './RequestPopup.module.scss';
 
 interface Props {
@@ -30,7 +33,18 @@ const RequestPopup: React.FC<Props> = ({ className = '', popup, onClick }) => {
 	const submitHandler = (e: { preventDefault: () => void }) => {
 		e.preventDefault();
 		setValue({ name: '', email: '', website: '', company_name: '' });
+		onClick(false);
+		setTimeout(() => {
+			// dispatch(setAlert({ alert: true }));
+			toast.success(
+				'Thank you! Data sent successfully. We’ll get back to you as soon as possible.',
+				{ duration: 3000 }
+			);
+		}, 500);
 	};
+
+	const { setAlert } = alertSlice.actions;
+	const dispatch = useAppDispatch();
 
 	return (
 		<BasePopup className={className} popup={popup} onClick={onClick}>
@@ -616,9 +630,9 @@ const RequestPopup: React.FC<Props> = ({ className = '', popup, onClick }) => {
 								width='195.022'
 								height='95.7965'
 								filterUnits='userSpaceOnUse'
-								color-interpolation-filters='sRGB'
+								colorInterpolationFilters='sRGB'
 							>
-								<feFlood flood-opacity='0' result='BackgroundImageFix' />
+								<feFlood floodOpacity='0' result='BackgroundImageFix' />
 								<feBlend
 									mode='normal'
 									in='SourceGraphic'
