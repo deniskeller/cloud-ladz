@@ -3,6 +3,8 @@ import {
 	Benefits,
 	Form,
 	Header,
+	HowWeWork,
+	PaymentSchemes,
 	Services,
 } from 'components/landing/pages/Main';
 
@@ -13,7 +15,9 @@ const Main = () => {
 			<About />
 			<Benefits />
 			<Form />
+			<HowWeWork />
 			<Services />
+			<PaymentSchemes />
 		</>
 	);
 };

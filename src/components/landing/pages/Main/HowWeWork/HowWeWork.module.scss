@@ -1,0 +1,301 @@
+.HowWeWork {
+	position: relative;
+	padding: em(136px) 0 em(241px);
+	@include iflaptop {
+		padding: em(136px) 0 em(256px);
+	}
+	@include iftablet {
+		padding: em(112px) 0 em(203px);
+	}
+	@include ifmobile {
+		padding: em(101px) 0 em(147px);
+	}
+
+	&_Image {
+		image-rendering: pixelated;
+		position: absolute;
+		width: em(1251px);
+		height: em(899px);
+		top: em(370px);
+		right: em(-174px);
+		transform: scale(1, -1);
+		@include iflaptop {
+			width: em(1024px);
+			top: em(483px);
+			right: em(-45px);
+		}
+		@include iftablet {
+			width: em(768px);
+			top: em(387px);
+			right: 0;
+		}
+		@include ifmobile {
+			width: em(360px);
+			height: em(699px);
+			top: em(480px);
+			right: 0;
+		}
+	}
+
+	&_IconBefore {
+		position: absolute;
+		width: em(91px);
+		height: em(122px);
+		top: em(40px);
+		left: em(132px);
+		svg {
+			width: 100%;
+			height: 100%;
+		}
+		@include iflaptop {
+			width: em(91px);
+			height: em(122px);
+			top: em(40px);
+			left: em(30px);
+		}
+		@include iftablet {
+			width: em(91px);
+			height: em(100px);
+			top: em(30px);
+			left: em(50px);
+		}
+		@include ifmobile {
+			width: em(91px);
+			height: em(100px);
+			top: em(15px);
+			left: em(4px);
+		}
+	}
+
+	&_IconAfter {
+		position: absolute;
+		width: em(649px);
+		height: em(136px);
+		bottom: em(41px);
+		left: em(131px);
+		svg {
+			width: 100%;
+			height: 100%;
+		}
+		@include iflaptop {
+			width: em(430px);
+			height: em(162px);
+			bottom: em(38px);
+			left: em(30px);
+		}
+		@include iftablet {
+			width: em(304px);
+			height: em(117px);
+			bottom: em(44px);
+			left: em(50px);
+		}
+		@include ifmobile {
+			width: em(304px);
+			height: em(117px);
+			bottom: em(15px);
+			left: 0;
+		}
+
+		&_Desktop {
+			display: none;
+			@include ifdesktop {
+				display: block;
+			}
+		}
+		&_Mobile {
+			display: block;
+			@include ifdesktop {
+				display: none;
+			}
+		}
+	}
+
+	&_Title {
+		margin-left: em(270px);
+		margin-bottom: em(80px);
+		@include iflaptop {
+			margin-left: em(149px);
+			margin-bottom: em(64px);
+		}
+		@include iftablet {
+			margin-left: em(165px);
+			margin-bottom: em(50px);
+		}
+		@include ifmobile {
+			margin-left: em(123px);
+			margin-bottom: em(38px);
+		}
+		h2 {
+			color: $white;
+			font-family: $Grotesk;
+			font-size: em(46px);
+			font-style: normal;
+			font-weight: 800;
+			line-height: 112%;
+			@include iflaptop {
+				font-size: em(42px);
+			}
+			@include iftablet {
+				font-size: em(36px);
+			}
+			@include ifmobile {
+				font-size: em(24px);
+			}
+		}
+	}
+
+	&_Content {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		max-width: em(1246px);
+		margin: 0 auto;
+		gap: em(10px) em(556px);
+		@include iflaptop {
+			max-width: em(891px);
+			gap: em(10px) em(259px);
+		}
+		@include iftablet {
+			max-width: em(684px);
+			gap: em(44px) em(52px);
+		}
+		@include ifmobile {
+			grid-template-columns: 1fr;
+			gap: em(38px) 0;
+		}
+		.Step {
+			max-width: em(345px);
+			position: relative;
+			@include iflaptop {
+				max-width: em(316px);
+			}
+			@include iftablet {
+				max-width: em(300px);
+			}
+			@include ifmobile {
+				max-width: 100%;
+			}
+			&:last-child {
+				grid-column: 1 / -1;
+				margin: 0 auto;
+				max-width: em(380px);
+				@include iflaptop {
+					max-width: em(316px);
+				}
+				@include iftablet {
+					max-width: em(371px);
+				}
+				@include ifmobile {
+					max-width: 100%;
+				}
+			}
+
+			&_Icon {
+				width: em(36px);
+				height: em(36px);
+				margin-bottom: em(18px);
+				margin-left: em(8px);
+			}
+
+			&_Text {
+				color: $white;
+				font-size: em(20px);
+				font-style: normal;
+				font-weight: $normal;
+				@include ifmobile {
+					font-size: em(18px);
+				}
+
+				span {
+					font-size: em(24px, 20px);
+					@include ifmobile {
+						font-size: em(22px, 18px);
+					}
+				}
+			}
+
+			&_IconNext {
+				position: absolute;
+				&_Desktop {
+					width: em(251px);
+					height: em(79px);
+
+					@include iflaptop {
+						width: em(206px);
+						height: em(64px);
+					}
+					@include iftablet {
+						display: none;
+					}
+					@include ifmobile {
+						display: none;
+					}
+				}
+
+				&_Mobile {
+					display: block;
+					width: em(99px);
+					height: em(64px);
+					@include ifdesktop {
+						display: none;
+					}
+					@include iflaptop {
+						display: none;
+					}
+
+					@include ifmobile {
+						width: em(71px);
+						height: em(45px);
+					}
+				}
+			}
+
+			&_IconNext1 {
+				bottom: em(-110px);
+				left: em(156px);
+				@include iflaptop {
+					bottom: em(-90px);
+					left: em(60px);
+				}
+				@include iftablet {
+					bottom: em(-90px);
+					left: em(50px);
+				}
+				@include ifmobile {
+					bottom: em(-53px);
+					left: em(125px);
+					transform: rotate(-137deg);
+				}
+			}
+
+			&_IconNext2 {
+				bottom: em(-30px);
+				left: em(-273px);
+				transform: rotate(150deg);
+				transform: scale(1, -1);
+				@include iflaptop {
+					bottom: em(20px);
+					left: em(-220px);
+					transform: rotate(150deg);
+					transform: scale(1, -1);
+				}
+				@include iftablet {
+					bottom: em(-20px);
+					left: em(-110px);
+				}
+				@include ifmobile {
+					bottom: em(-70px);
+					left: auto;
+					right: em(-10px);
+					transform: rotate(-137deg);
+				}
+			}
+		}
+	}
+}
+
+@include iflaptop {
+}
+@include iftablet {
+}
+@include ifmobile {
+}

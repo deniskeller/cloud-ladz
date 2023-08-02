@@ -1,19 +1,20 @@
 .Services {
 	&_Title {
-		margin-bottom: em(50px);
+		margin-bottom: em(10px);
 		@include iflaptop {
-			margin-bottom: em(30px);
+			margin-bottom: em(7px);
 		}
 		@include iftablet {
-			margin-bottom: em(78px);
+			margin-bottom: em(25px);
 		}
 		@include ifmobile {
-			margin-bottom: em(43px);
+			margin-bottom: em(0px);
 		}
 		h2 {
 			color: $white;
 			font-family: $Grotesk;
 			font-size: em(46px);
+			line-height: 112%;
 			@include iflaptop {
 				font-size: em(42px);
 			}
