@@ -31,7 +31,7 @@ const BasePopup: React.FC<Props> = ({
 	const scrollbarWidth = windowsWidth - documentWidth;
 
 	useEffect(() => {
-		if (popup) {
+		if (popup && document != undefined) {
 			document.body.style.overflow = 'hidden';
 			document.body.style.height = '100%';
 			document.body.style.paddingRight = scrollbarWidth + 'px';
