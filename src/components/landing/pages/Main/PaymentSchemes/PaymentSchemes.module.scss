@@ -1,0 +1,322 @@
+.PaymentSchemes {
+	position: relative;
+	padding: em(147px) 0 0;
+
+	@include iflaptop {
+		padding: em(140px) 0 0;
+	}
+	@include iftablet {
+		padding: em(112px) 0 em(100px);
+	}
+	@include ifmobile {
+		padding: em(44px) 0 em(31px);
+	}
+
+	&_IconBefore {
+		position: absolute;
+		width: em(396px);
+		height: em(133px);
+		top: em(40px);
+		right: em(236px);
+		svg {
+			width: 100%;
+			height: 100%;
+		}
+
+		@media only screen and (min-width: 1025px) and (max-width: 1640px) {
+			width: em(131px);
+			height: em(162px);
+			top: em(40px);
+			right: em(200px);
+		}
+
+		@include iflaptop {
+			width: em(91px);
+			height: em(122px);
+			top: em(50px);
+			right: em(30px);
+		}
+		@include iftablet {
+			width: em(91px);
+			height: em(100px);
+			top: em(30px);
+			right: em(50px);
+		}
+		@include ifmobile {
+			width: em(91px);
+			height: em(100px);
+			top: em(15px);
+			right: em(12px);
+		}
+
+		&_Desktop {
+			display: none;
+			@media only screen and (min-width: 1641px) {
+				display: block;
+			}
+		}
+		&_Mobile {
+			display: none;
+			@media only screen and (max-width: 1640px) {
+				display: block;
+			}
+		}
+	}
+
+	&_Title {
+		position: relative;
+		max-width: em(892px);
+		margin-bottom: em(83px);
+		@include iflaptop {
+			max-width: em(808px);
+			margin-bottom: em(57px);
+		}
+		@include iftablet {
+			max-width: em(528px);
+			margin-bottom: em(30px);
+		}
+		@include ifmobile {
+			max-width: em(296px);
+			margin-bottom: em(30px);
+		}
+		h2 {
+			color: $white;
+			font-family: $Grotesk;
+			font-size: em(46px);
+			font-style: normal;
+			font-weight: 800;
+			line-height: 112%;
+			@include iflaptop {
+				font-size: em(42px);
+			}
+			@include iftablet {
+				font-size: em(36px);
+			}
+			@include ifmobile {
+				font-size: em(24px);
+			}
+		}
+	}
+
+	&_Image {
+		position: relative;
+		margin: 0 auto;
+		width: em(436px);
+		height: em(149px);
+		@include iflaptop {
+			width: em(433px);
+			height: em(141px);
+		}
+		@include iftablet {
+			width: em(400px);
+			height: em(143px);
+		}
+		@include ifmobile {
+			width: em(204px);
+			height: em(103px);
+			margin-left: auto;
+			margin-right: em(16px);
+		}
+
+		&_Arrow {
+			position: absolute;
+			width: em(648px);
+			height: em(134px);
+			top: em(-120px);
+			left: calc(50% - em(7px));
+			transform: translate(-100%, 0);
+
+			@include iflaptop {
+				width: em(309px);
+				height: em(160px);
+				top: em(-155px);
+				left: calc(50% - em(5px));
+			}
+			@include iftablet {
+				width: em(188px);
+				height: em(117px);
+				top: em(-110px);
+				left: calc(50% - em(5px));
+				transform: translate(-100%, 0);
+			}
+			@include ifmobile {
+				width: em(188px);
+				height: em(117px);
+				top: em(-110px);
+				left: calc(50% - em(3px));
+				transform: translate(-100%, 0);
+			}
+
+			&_Desktop {
+				display: none;
+				@include ifdesktop {
+					display: block;
+				}
+			}
+
+			&_Tablet {
+				display: none;
+				@include iflaptop {
+					display: block;
+				}
+			}
+
+			&_Mobile {
+				display: none;
+				@include iftablet {
+					display: block;
+				}
+				@include ifmobile {
+					display: block;
+				}
+			}
+		}
+
+		&_Cosmo {
+			width: 100%;
+			height: auto;
+			position: relative;
+			z-index: 1;
+		}
+	}
+
+	&_Partners {
+		width: 100%;
+		margin-bottom: em(191px);
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: em(32px);
+
+		@include iflaptop {
+			margin-bottom: em(217px);
+			gap: em(28px) em(35px);
+		}
+		@include iftablet {
+			margin-bottom: em(148px);
+			padding: 0 em(73px);
+			gap: em(28px) em(35px);
+		}
+		@include ifmobile {
+			margin-bottom: em(134px);
+			gap: em(16px) em(20px);
+		}
+
+		svg {
+			-webkit-filter: grayscale(100%);
+			filter: grayscale(100%);
+			cursor: pointer;
+			&:hover {
+				-webkit-filter: none;
+				filter: none;
+			}
+		}
+
+		.Discover {
+			width: em(264px);
+			height: em(52px);
+			@include ifmobile {
+				width: em(165px);
+				height: em(32px);
+			}
+		}
+
+		.Euro {
+			width: em(63px);
+			height: em(52px);
+			@include ifmobile {
+				width: em(39px);
+				height: em(32px);
+			}
+		}
+
+		.Swift {
+			width: em(121px);
+			height: em(52px);
+			@include ifmobile {
+				width: em(84px);
+				height: em(32px);
+			}
+		}
+
+		.Coin {
+			width: em(52px);
+			height: em(52px);
+			@include ifmobile {
+				width: em(32px);
+				height: em(32px);
+			}
+		}
+
+		.UnionPay {
+			width: em(77px);
+			height: em(52px);
+			@include ifmobile {
+				width: em(48px);
+				height: em(32px);
+			}
+		}
+
+		.Jcb {
+			width: em(68px);
+			height: em(52px);
+			@include ifmobile {
+				width: em(41px);
+				height: em(32px);
+			}
+		}
+
+		.MasterCard {
+			width: em(82px);
+			height: em(52px);
+			@include ifmobile {
+				width: em(51px);
+				height: em(32px);
+			}
+		}
+
+		.Express {
+			width: em(52px);
+			height: em(52px);
+			@include ifmobile {
+				width: em(32px);
+				height: em(32px);
+			}
+		}
+
+		.Visa {
+			width: em(130px);
+			height: em(52px);
+			@include ifmobile {
+				width: em(82px);
+				height: em(32px);
+			}
+		}
+
+		.Sofort {
+			width: em(125px);
+			height: em(52px);
+			@include ifmobile {
+				width: em(80px);
+				height: em(32px);
+			}
+		}
+
+		.Diners {
+			width: em(170px);
+			height: em(52px);
+			@include ifmobile {
+				width: em(109px);
+				height: em(32px);
+			}
+		}
+	}
+}
+
+@include iflaptop {
+}
+@include iftablet {
+}
+@include ifmobile {
+}

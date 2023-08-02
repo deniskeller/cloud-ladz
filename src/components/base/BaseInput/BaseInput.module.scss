@@ -51,7 +51,7 @@
 }
 
 .Error {
-	border-bottom: 1px solid $error !important;
+	border-bottom: 1px solid $red !important;
 }
 
 .ErrorText {
@@ -62,7 +62,7 @@
 		font-size: em(12px);
 		font-family: 'DS+Sans', sans-serif;
 		line-height: 100%;
-		color: $error;
+		color: $red;
 		font-weight: 300;
 	}
 }
