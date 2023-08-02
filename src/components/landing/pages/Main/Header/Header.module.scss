@@ -1,5 +1,19 @@
 .HeaderWrapper {
 	position: relative;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: bottom;
+	background-image: url('/images/pictures/main-header-bg.png');
+	image-rendering: pixelated;
+	@include iflaptop {
+		background-image: url('/images/pictures/main-header-bg-2.png');
+	}
+	@include iftablet {
+		background-image: url('/images/pictures/main-header-bg-3.png');
+	}
+	@include ifmobile {
+		background-image: url('/images/pictures/main-header-bg-4.png');
+	}
 }
 
 .Header {
@@ -21,6 +35,33 @@
 	&_Image {
 		image-rendering: pixelated;
 		z-index: 0;
+		&_Desktop {
+			display: none;
+			@include ifdesktop {
+				display: block;
+			}
+		}
+
+		&_Laptop {
+			display: none;
+			@include iflaptop {
+				display: block;
+			}
+		}
+
+		&_Tablet {
+			display: none;
+			@include iftablet {
+				display: block;
+			}
+		}
+
+		&_Mobile {
+			display: none;
+			@include ifmobile {
+				display: block;
+			}
+		}
 	}
 
 	&_Title {

@@ -9,15 +9,45 @@ interface Props {}
 const Header: React.FC<Props> = () => {
 	return (
 		<div className={s.HeaderWrapper}>
-			<Image
+			{/* <Image
 				src='/images/pictures/main-header-bg.png'
 				fill
 				alt={'Main header bg'}
 				unoptimized={true}
-				className={s.Header_Image}
+				className={`${s.Header_Image} ${s.Header_Image_Desktop}`}
 				priority
 				style={{ objectFit: 'cover' }}
+			/> */}
+
+			{/* <Image
+				src='/images/pictures/main-header-bg-2.png'
+				fill
+				alt={'Main header bg'}
+				unoptimized={true}
+				className={`${s.Header_Image} ${s.Header_Image_Laptop}`}
+				priority
+				// style={{ objectFit: 'cover' }}
 			/>
+
+			<Image
+				src='/images/pictures/main-header-bg-3.png'
+				fill
+				alt={'Main header bg'}
+				unoptimized={true}
+				className={`${s.Header_Image} ${s.Header_Image_Tablet}`}
+				priority
+				// style={{ objectFit: 'cover' }}
+			/>
+
+			<Image
+				src='/images/pictures/main-header-bg-4.png'
+				fill
+				alt={'Main header bg'}
+				unoptimized={true}
+				className={`${s.Header_Image} ${s.Header_Image_Mobile}`}
+				priority
+				// style={{ objectFit: 'cover' }}
+			/> */}
 
 			<div className={s.Header}>
 				<div className={s.Header_Title}>
