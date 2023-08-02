@@ -1,0 +1,112 @@
+.Content {
+	@include iflaptop {
+		margin-bottom: em(40px);
+	}
+	@include iftablet {
+		margin-bottom: em(60px);
+	}
+	@include ifmobile {
+		margin-bottom: em(30px);
+	}
+	&_Title {
+		margin-bottom: em(30px);
+		h1 {
+			color: $violet;
+			font-size: em(42px);
+			font-style: normal;
+			font-weight: 500;
+			line-height: normal;
+			@include iftablet {
+				font-size: em(36px);
+			}
+			@include ifmobile {
+				font-size: em(24px);
+			}
+		}
+	}
+
+	&_Subtitle {
+		margin-bottom: em(30px);
+		p {
+			color: $black2;
+			font-size: em(24px);
+			font-style: normal;
+			font-weight: 300;
+			line-height: normal;
+			@include iftablet {
+				font-size: em(20px);
+			}
+			@include ifmobile {
+				font-size: em(18px);
+			}
+		}
+	}
+
+	&_Note {
+		p {
+			color: $violet;
+			font-size: em(24px);
+			font-style: normal;
+			font-weight: 500;
+			line-height: normal;
+			@include ifmobile {
+				font-size: em(20px);
+			}
+		}
+	}
+
+	ul {
+		list-style: auto;
+		display: grid;
+		grid-template-columns: 1fr;
+		padding-left: em(40px);
+		gap: em(20px) 0;
+		margin-bottom: em(20px);
+		@include iflaptop {
+			padding-left: em(30px);
+		}
+		@include iftablet {
+			padding-left: em(30px);
+		}
+		@include ifmobile {
+			padding-left: em(20px);
+		}
+		li {
+			color: $black;
+			font-size: em(24px);
+			font-style: normal;
+			font-weight: 300;
+			line-height: normal;
+			@include ifmobile {
+				font-size: em(20px);
+			}
+
+			ol {
+				list-style: disc;
+				display: grid;
+				grid-template-columns: 1fr;
+				gap: em(12px) 0;
+				padding-top: em(14px);
+				@include iflaptop {
+				}
+				@include iftablet {
+				}
+				@include ifmobile {
+				}
+				li {
+					color: $black2;
+					font-size: em(16px, 24px);
+					font-style: normal;
+					font-weight: 300;
+					line-height: normal;
+					&::marker {
+						font-size: em(12px);
+					}
+					@include ifmobile {
+						font-size: em(14px, 20px);
+					}
+				}
+			}
+		}
+	}
+}
