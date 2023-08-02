@@ -1,0 +1,154 @@
+.Form {
+	position: relative;
+	border-radius: em(56px);
+	background: linear-gradient(136deg, #5f41d4 0%, rgba(40, 29, 83, 0) 110%);
+	width: 100%;
+	padding: em(66px);
+	@include iflaptop {
+		padding: em(60px);
+		background: linear-gradient(148deg, #5f41d4 0%, rgba(40, 29, 83, 0) 110%);
+	}
+	@include iftablet {
+		border-radius: em(44px);
+		padding: em(40px) em(32px);
+		background: linear-gradient(148deg, #5f41d4 0%, rgba(40, 29, 83, 0) 110%);
+	}
+	@include ifmobile {
+		padding: em(20px) em(10px) em(152px);
+		border-radius: em(16px);
+		background: linear-gradient(90deg, #5f41d4 0%, #281d53 110%);
+	}
+
+	&_Image {
+		position: absolute;
+		bottom: em(66px);
+		left: em(66px);
+		width: em(522px);
+		height: em(418px);
+		@include iflaptop {
+			top: em(195px);
+			right: em(59px);
+			bottom: auto;
+			left: auto;
+			width: em(155px);
+			height: em(112px);
+		}
+		@include iftablet {
+			top: em(170px);
+			right: em(28px);
+			bottom: auto;
+			left: auto;
+			width: em(140px);
+			height: em(101px);
+		}
+		@include ifmobile {
+			display: block;
+			position: absolute;
+			bottom: em(20px);
+			left: 50%;
+			transform: translate(-50%, 0);
+			width: em(182px);
+			height: em(108px);
+		}
+
+		.Cosmo1 {
+			@include ifmobile {
+				display: none;
+			}
+		}
+		.Cosmo2 {
+			display: none;
+			@include ifmobile {
+				display: block;
+			}
+		}
+	}
+
+	&_Title {
+		max-width: em(832px);
+		margin: 0 auto;
+		margin-bottom: em(30px);
+		@include ifmobile {
+			margin-bottom: em(16px);
+		}
+		h2 {
+			color: $white;
+			text-align: center;
+			font-family: $Grotesk;
+			font-size: em(46px);
+			font-style: normal;
+			font-weight: 800;
+			line-height: 112%;
+			@include iflaptop {
+				font-size: em(42px);
+			}
+			@include iftablet {
+				font-size: em(36px);
+			}
+			@include ifmobile {
+				text-align: left;
+				font-size: em(22px);
+			}
+		}
+	}
+
+	&_Subtitle {
+		max-width: em(832px);
+		margin: 0 auto;
+		margin-bottom: em(86px);
+		@include iflaptop {
+			margin-bottom: em(77px);
+		}
+		@include iftablet {
+			margin-bottom: em(84px);
+		}
+		@include ifmobile {
+			margin-bottom: em(30px);
+		}
+		p {
+			color: $white;
+			font-size: em(20px);
+			font-weight: $normal;
+			text-align: center;
+			@include iftablet {
+				font-size: em(18px);
+			}
+			@include ifmobile {
+				text-align: left;
+				font-size: em(18px);
+			}
+		}
+	}
+
+	&_Content {
+		border-radius: em(28px);
+		background: #573cc0;
+		padding: em(38px) em(32px) em(32px);
+		max-width: em(805px);
+		margin-left: auto;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: em(36px) em(40px);
+		grid-template-rows: max-content;
+		position: relative;
+		z-index: 1;
+		@include ifmobile {
+			grid-template-columns: 1fr;
+			gap: em(30px) 0;
+			border-radius: em(28px);
+			background: transparent;
+			padding: 0;
+		}
+
+		.Button {
+			width: 100%;
+		}
+	}
+}
+
+@include iflaptop {
+}
+@include iftablet {
+}
+@include ifmobile {
+}

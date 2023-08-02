@@ -3,7 +3,6 @@ import s from './BaseInput.module.scss';
 
 interface Props {
 	type?: string;
-	theme?: string;
 	name: string;
 	label?: string;
 	min?: number;
@@ -23,7 +22,6 @@ const BaseInput: React.FC<Props> = ({
 	value,
 	label,
 	type = 'text',
-	theme = 'light',
 	error,
 	name,
 	min,
@@ -37,11 +35,19 @@ const BaseInput: React.FC<Props> = ({
 	onKeyDown,
 }) => {
 	return (
-		<div className={`${s.BaseInput} ${className}`}>
+		<div
+			className={`${s.BaseInput} ${className} ${error ? s.BaseInputError : ''}`}
+		>
+			{label ? (
+				<label className={`${s.Label} ${value ? s.NoEmpty : ''}`}>
+					{label}
+				</label>
+			) : null}
+
 			<input
 				value={value}
 				type={type}
-				className={`${s.Input} ${error ? s.Error : ''} ${s['Input_' + theme]}`}
+				className={`${s.Input} ${error ? s.Error : ''}`}
 				name={name}
 				min={min}
 				max={max}
@@ -54,16 +60,6 @@ const BaseInput: React.FC<Props> = ({
 				}
 				onKeyDown={onKeyDown}
 			/>
-
-			{label ? (
-				<label
-					className={`${s.Label} ${value ? s.NoEmpty : ''} ${
-						s['Label_' + theme]
-					}`}
-				>
-					{label}
-				</label>
-			) : null}
 
 			{error ? (
 				<div className={s.ErrorText}>
