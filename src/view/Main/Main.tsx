@@ -12,7 +12,7 @@ import React from 'react';
 
 const Main: React.FC = () => {
 	return (
-		<>
+		<div style={{ overflow: 'hidden' }}>
 			<Header />
 			<About />
 			<Benefits />
@@ -21,7 +21,7 @@ const Main: React.FC = () => {
 			<Services />
 			<PaymentSchemes />
 			<BaseAlert />
-		</>
+		</div>
 	);
 };
 
