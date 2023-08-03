@@ -1,0 +1,87 @@
+.Wrapper {
+	position: relative;
+	padding: em(256px) 0 0;
+}
+
+.Body {
+	display: grid;
+	grid-template-columns: 1fr em(281px);
+	gap: 0 em(116px);
+	@include iflaptop {
+		grid-template-columns: 1fr em(250px);
+		gap: 0 em(69px);
+	}
+	@include iftablet {
+		grid-template-columns: 1fr;
+		gap: 0;
+	}
+	@include ifmobile {
+		grid-template-columns: 1fr;
+		gap: 0;
+	}
+
+	.Content {
+		&_Header {
+			display: flex;
+			flex-direction: row;
+			align-items: baseline;
+			margin-bottom: em(30px);
+
+			span {
+				cursor: pointer;
+				width: em(32px);
+				height: em(32px);
+				margin-right: em(26px);
+			}
+
+			h1 {
+				color: $violet;
+				font-size: em(42px);
+				font-style: normal;
+				font-weight: 400;
+				line-height: normal;
+			}
+		}
+
+		&_Subtitle {
+			margin-bottom: em(30px);
+			p {
+				color: $black;
+				font-size: em(24px);
+				font-style: normal;
+				font-weight: 300;
+				line-height: normal;
+			}
+		}
+
+		p {
+			color: $black2;
+			font-size: em(16px);
+			font-style: normal;
+			font-weight: 300;
+			line-height: normal;
+			margin-bottom: em(30px, 16px);
+		}
+
+		.Subtitle {
+			margin-bottom: em(16px);
+			h2 {
+				color: $violet;
+				font-size: em(24px);
+				font-style: normal;
+				font-weight: 400;
+				line-height: normal;
+			}
+		}
+		ul {
+			margin-bottom: em(30px);
+			li {
+				color: $black;
+				font-size: em(16px);
+				font-style: normal;
+				font-weight: 300;
+				line-height: normal;
+			}
+		}
+	}
+}

@@ -1,0 +1,64 @@
+.Sidebar {
+	position: relative;
+	@include iftablet {
+		display: none;
+	}
+	@include ifmobile {
+		display: none;
+	}
+
+	&_Sticky {
+		position: sticky;
+		top: em(20px);
+	}
+
+	&_Header {
+		margin-bottom: em(20px);
+		span {
+			color: $violet;
+			font-size: em(20px);
+			font-style: normal;
+			font-weight: 500;
+			line-height: 160%;
+		}
+	}
+
+	&_Content {
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: em(14px) 0;
+
+		&_Item {
+			position: relative;
+			cursor: pointer;
+			padding: em(10px) em(8px);
+			&:hover {
+				span {
+					color: $violet;
+				}
+			}
+			span {
+				display: flex;
+				font-weight: 400;
+				font-size: em(16px);
+				line-height: 100%;
+				color: $black2;
+			}
+		}
+		.Active {
+			&::before {
+				display: block;
+				content: '';
+				position: absolute;
+				left: 0;
+				bottom: 0;
+				width: 100%;
+				height: 2px;
+				background: #bed252;
+			}
+			span {
+				color: $violet;
+			}
+		}
+	}
+}
