@@ -46,9 +46,9 @@ const TermsAndConditions: React.FC = () => {
 									<path
 										d='M13.3333 25.8337L4 16.5003M4 16.5003L13.3333 7.16699M4 16.5003L28 16.5003'
 										stroke='#1E1E1E'
-										stroke-width='2'
-										stroke-linecap='round'
-										stroke-linejoin='round'
+										strokeWidth='2'
+										strokeLinecap='round'
+										strokeLinejoin='round'
 									/>
 								</svg>
 							</span>

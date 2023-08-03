@@ -1,6 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import { BaseContainer } from '@base/index';
 import { Sidebar } from '@content/landing/index';
+import { useRouter } from 'next/router';
 import React from 'react';
 import s from './PrivacyPolicy.module.scss';
 
@@ -24,26 +25,26 @@ const navbar_links = [
 ];
 
 const PrivacyPolicy: React.FC = () => {
+	const router = useRouter();
+
 	return (
 		<div className={s.Wrapper}>
 			<BaseContainer>
 				<div className={s.Body}>
 					<div className={s.Content}>
 						<div className={s.Content_Header}>
-							<span>
+							<span onClick={() => router.back()}>
 								<svg
 									xmlns='http://www.w3.org/2000/svg'
-									width='32'
-									height='33'
 									viewBox='0 0 32 33'
 									fill='none'
 								>
 									<path
 										d='M13.3333 25.8337L4 16.5003M4 16.5003L13.3333 7.16699M4 16.5003L28 16.5003'
 										stroke='#1E1E1E'
-										stroke-width='2'
-										stroke-linecap='round'
-										stroke-linejoin='round'
+										strokeWidth='2'
+										strokeLinecap='round'
+										strokeLinejoin='round'
 									/>
 								</svg>
 							</span>
