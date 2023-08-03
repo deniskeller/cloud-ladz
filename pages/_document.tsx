@@ -15,7 +15,7 @@ export default function Document() {
 					href='https://use.typekit.net/fzy6ewm.css'
 				></link>
 
-				<link
+				{/* <link
 					rel='apple-touch-icon'
 					sizes='180x180'
 					href='/apple-touch-icon.png'
@@ -36,7 +36,7 @@ export default function Document() {
 				<link rel='mask-icon' href='/safari-pinned-tab.svg' color='#5f41d4' />
 				<meta name='msapplication-TileColor' content='#5f41d4' />
 				<meta name='theme-color' content='#5f41d4'></meta>
-				<link rel='icon' type='image/png' href='/favicon.ico'></link>
+				<link rel='icon' type='image/png' href='/favicon.ico'></link> */}
 			</Head>
 			<title>Cloud ladz</title>
 			<body>
