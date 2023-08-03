@@ -10,6 +10,11 @@
 	&_Sticky {
 		position: sticky;
 		top: em(20px);
+		height: em(700px);
+		overflow: auto;
+		&::-webkit-scrollbar {
+			width: 0;
+		}
 	}
 
 	&_Header {
