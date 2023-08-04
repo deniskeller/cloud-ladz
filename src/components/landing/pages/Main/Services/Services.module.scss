@@ -45,6 +45,7 @@
 		@include iftablet {
 			height: em(830px);
 			background-image: url('/images/pictures/services-pictures-3.png');
+			image-rendering: initial;
 		}
 		@include ifmobile {
 			height: em(1016px);
