@@ -31,6 +31,7 @@
 		position: relative;
 		width: 100%;
 		height: em(710px);
+		image-rendering: pixelated;
 		@media only screen and (min-width: 769px) and (max-width: 1699px) {
 			width: em(924px);
 			height: em(946px);

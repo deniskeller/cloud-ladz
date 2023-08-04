@@ -25,6 +25,12 @@
 		left: em(66px);
 		width: em(522px);
 		height: em(418px);
+		@media only screen and (min-width: 1025px) and (max-width: 1600px) {
+			width: em(322px);
+			height: em(218px);
+			bottom: em(130px);
+			left: em(66px);
+		}
 		@include iflaptop {
 			top: em(195px);
 			right: em(59px);
@@ -93,13 +99,15 @@
 	}
 
 	&_Subtitle {
-		max-width: em(832px);
+		max-width: em(862px);
 		margin: 0 auto;
 		margin-bottom: em(86px);
 		@include iflaptop {
+			max-width: em(580px);
 			margin-bottom: em(77px);
 		}
 		@include iftablet {
+			max-width: em(500px);
 			margin-bottom: em(84px);
 		}
 		@include ifmobile {
@@ -144,11 +152,4 @@
 			width: 100%;
 		}
 	}
-}
-
-@include iflaptop {
-}
-@include iftablet {
-}
-@include ifmobile {
 }

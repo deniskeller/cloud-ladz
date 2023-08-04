@@ -47,8 +47,6 @@ const PaymentSchemes: React.FC = () => {
 
 				<div className={s.PaymentSchemes_Partners}>
 					<svg
-						width='264'
-						height='52'
 						viewBox='0 0 264 52'
 						fill='none'
 						xmlns='http://www.w3.org/2000/svg'
@@ -1993,12 +1991,12 @@ const PaymentSchemes: React.FC = () => {
 								y2='19.1967'
 								gradientUnits='userSpaceOnUse'
 							>
-								<stop stopColor='#F9A020' />
-								<stop offset='0.25' stopColor='#F89B20' />
-								<stop offset='0.53' stopColor='#F68D20' />
-								<stop offset='0.62' stopColor='#F68820' />
-								<stop offset='0.73' stopColor='#F58120' />
-								<stop offset='1' stopColor='#F47521' />
+								<stop stop-color='#F9A020' />
+								<stop offset='0.25' stop-color='#F89B20' />
+								<stop offset='0.53' stop-color='#F68D20' />
+								<stop offset='0.62' stop-color='#F68820' />
+								<stop offset='0.73' stop-color='#F58120' />
+								<stop offset='1' stop-color='#F47521' />
 							</linearGradient>
 							<linearGradient
 								id='paint1_linear_207_9154'
@@ -2008,13 +2006,13 @@ const PaymentSchemes: React.FC = () => {
 								y2='0.11655'
 								gradientUnits='userSpaceOnUse'
 							>
-								<stop stopColor='#F68820' stopOpacity='0' />
-								<stop offset='0.11' stopColor='#EE7F22' stopOpacity='0.14' />
-								<stop offset='0.31' stopColor='#E37226' stopOpacity='0.35' />
-								<stop offset='0.5' stopColor='#DB6829' stopOpacity='0.52' />
-								<stop offset='0.69' stopColor='#D5602C' stopOpacity='0.64' />
-								<stop offset='0.85' stopColor='#D15C2D' stopOpacity='0.71' />
-								<stop offset='0.98' stopColor='#D05B2E' stopOpacity='0.74' />
+								<stop stop-color='#F68820' stop-opacity='0' />
+								<stop offset='0.11' stop-color='#EE7F22' stop-opacity='0.14' />
+								<stop offset='0.31' stop-color='#E37226' stop-opacity='0.35' />
+								<stop offset='0.5' stop-color='#DB6829' stop-opacity='0.52' />
+								<stop offset='0.69' stop-color='#D5602C' stop-opacity='0.64' />
+								<stop offset='0.85' stop-color='#D15C2D' stop-opacity='0.71' />
+								<stop offset='0.98' stop-color='#D05B2E' stop-opacity='0.74' />
 							</linearGradient>
 						</defs>
 					</svg>

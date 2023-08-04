@@ -14,7 +14,7 @@
 			padding: em(147px) 0 em(143px);
 		}
 		@include ifmobile {
-			padding: em(80px) 0 em(115px);
+			padding: em(130px) 0 em(115px);
 		}
 
 		.IconBefore {
@@ -31,7 +31,7 @@
 				}
 			}
 
-			&_Mobile {
+			&_Tablet {
 				display: block;
 				@include ifdesktop {
 					display: none;
@@ -50,10 +50,18 @@
 					left: em(80px);
 				}
 				@include ifmobile {
-					width: em(200px);
+					display: none;
+				}
+			}
+
+			&_Mobile {
+				display: none;
+				@include ifmobile {
+					display: block;
+					width: em(205px);
 					height: em(117px);
-					top: em(-30px);
-					left: em(30px);
+					top: em(0px);
+					left: em(10px);
 				}
 			}
 		}
@@ -98,8 +106,8 @@
 		position: absolute;
 		width: em(1251px);
 		height: em(899px);
-		top: em(100px);
-		left: em(90px);
+		top: em(90px);
+		left: em(-175px);
 		transform: scale(1, -1);
 		.Image {
 			image-rendering: pixelated;

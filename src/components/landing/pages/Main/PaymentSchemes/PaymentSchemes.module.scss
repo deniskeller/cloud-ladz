@@ -208,8 +208,8 @@
 			filter: grayscale(100%);
 			cursor: pointer;
 			&:hover {
-				-webkit-filter: none;
-				filter: none;
+				-webkit-filter: grayscale(0%);
+				filter: grayscale(0%);
 			}
 		}
 
