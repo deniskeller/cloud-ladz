@@ -28,7 +28,7 @@ const Form: React.FC = () => {
 		setTimeout(() => {
 			toast.success(
 				'Thank you! Data sent successfully. We’ll get back to you as soon as possible.',
-				{ duration: 3000 }
+				{ duration: 300000 }
 			);
 		}, 500);
 	};

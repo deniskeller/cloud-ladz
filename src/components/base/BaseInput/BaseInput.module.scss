@@ -27,7 +27,11 @@
 	-moz-transition: 0.5s ease all;
 	-webkit-transition: 0.5s ease all;
 	box-sizing: border-box;
-	@include placeholder-color(#dedede);
+
+	&::placeholder {
+		font-weight: 400 !important;
+		color: #dedede;
+	}
 
 	&:hover {
 		border-color: $white;

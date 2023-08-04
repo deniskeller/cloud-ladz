@@ -34,8 +34,8 @@ const BaseAlert: React.FC = () => {
 		>
 			{toasts.map((toast) => {
 				const offset = calculateOffset(toast, {
-					reverseOrder: false,
-					gutter: 8,
+					reverseOrder: true,
+					gutter: 1,
 				});
 
 				const ref = (el) => {

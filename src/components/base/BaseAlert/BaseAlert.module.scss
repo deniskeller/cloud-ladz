@@ -12,14 +12,15 @@
 		width: 100%;
 		max-width: em(600px);
 		position: absolute;
-		transition: all 0.5s ease-out;
 		padding: em(10px) em(16px);
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
 		border-radius: em(8px);
-		background: linear-gradient(180deg, #bed252 0%, #fff 100%);
+		background: linear-gradient(180deg, #bed252 0%, #eee797 100%);
 		box-shadow: 0px 6px 10px 0px rgba(190, 210, 82, 0.5);
+		transition: all 0.5s ease-in;
+		transform: translateY(0px);
 		@include ifmobile {
 			max-width: em(342px);
 			padding: em(10px) em(16px) em(10px) 0;
