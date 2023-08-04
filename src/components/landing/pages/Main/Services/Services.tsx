@@ -12,14 +12,14 @@ const Services: React.FC = () => {
 				</div>
 
 				<div className={s.Services_Pictures}>
-					<Image
+					{/* <Image
 						src='/images/pictures/services-pictures-1.png'
 						fill
 						alt={''}
 						unoptimized={true}
 						className={s.Image1}
-					/>
-					<Image
+					/> */}
+					{/* <Image
 						src='/images/pictures/services-pictures-2.png'
 						fill
 						alt={''}
@@ -41,7 +41,7 @@ const Services: React.FC = () => {
 						alt={''}
 						unoptimized={true}
 						className={s.Image4}
-					/>
+					/> */}
 				</div>
 			</BaseContainer>
 		</div>

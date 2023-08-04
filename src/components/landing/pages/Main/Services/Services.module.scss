@@ -32,16 +32,23 @@
 		width: 100%;
 		height: em(710px);
 		image-rendering: pixelated;
+		background-image: url('/images/pictures/services-pictures-1.png');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: auto;
 		@media only screen and (min-width: 769px) and (max-width: 1699px) {
 			width: em(924px);
 			height: em(946px);
 			margin: 0 auto;
+			background-image: url('/images/pictures/services-pictures-2.png');
 		}
 		@include iftablet {
 			height: em(830px);
+			background-image: url('/images/pictures/services-pictures-3.png');
 		}
 		@include ifmobile {
 			height: em(1016px);
+			background-image: url('/images/pictures/services-pictures-4.png');
 		}
 
 		.Image1 {
