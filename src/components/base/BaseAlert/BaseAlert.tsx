@@ -1,4 +1,5 @@
 //@ts-nocheck
+
 import { ALL_ICONS } from '@constants/icons';
 import React from 'react';
 import { ToastType, toast as toastOBj, useToaster } from 'react-hot-toast';
@@ -35,7 +36,7 @@ const BaseAlert: React.FC = () => {
 			{toasts.map((toast) => {
 				const offset = calculateOffset(toast, {
 					reverseOrder: true,
-					gutter: 1,
+					gutter: 8,
 				});
 
 				const ref = (el) => {
@@ -47,43 +48,43 @@ const BaseAlert: React.FC = () => {
 
 				return (
 					<div
-						className={styles.BaseAlert_Alert}
-						key={toast.id}
+						className={styles.Wrapper}
 						ref={ref}
+						key={toast.id}
 						style={{
-							position: 'absolute',
-							transition: 'all 0.5s ease',
 							opacity: toast.visible ? 1 : 0,
 							transform: `translateY(-${offset}px)`,
 						}}
 						{...toast.ariaProps}
 					>
-						<div className={styles.BaseAlert_Content}>
-							{typeIcon(toast.type)}
-							<div className={styles.Text}>
-								<span>{toast.message}</span>
+						<div className={styles.BaseAlert_Alert}>
+							<div className={styles.BaseAlert_Content}>
+								{typeIcon(toast.type)}
+								<div className={styles.Text}>
+									<span>{toast.message}</span>
+								</div>
 							</div>
+							{
+								<svg
+									xmlns='http://www.w3.org/2000/svg'
+									viewBox='0 0 24 24'
+									fill='none'
+									className={styles.BaseAlert_Close}
+									onClick={() => {
+										toast.visible = false;
+										toastOBj.dismiss(toast.id);
+									}}
+								>
+									<path
+										d='M6 18L18 6M6 6L18 18'
+										stroke='#5F41D4'
+										strokeWidth='2'
+										strokeLinecap='round'
+										strokeLinejoin='round'
+									/>
+								</svg>
+							}
 						</div>
-						{
-							<svg
-								xmlns='http://www.w3.org/2000/svg'
-								viewBox='0 0 24 24'
-								fill='none'
-								className={styles.BaseAlert_Close}
-								onClick={() => {
-									toast.visible = false;
-									toastOBj.dismiss(toast.id);
-								}}
-							>
-								<path
-									d='M6 18L18 6M6 6L18 18'
-									stroke='#5F41D4'
-									strokeWidth='2'
-									strokeLinecap='round'
-									strokeLinejoin='round'
-								/>
-							</svg>
-						}
 					</div>
 				);
 			})}

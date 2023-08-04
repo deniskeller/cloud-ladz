@@ -1,17 +1,28 @@
 .BaseAlert {
-	width: 100%;
 	position: fixed;
-	z-index: 9999;
-	bottom: em(100px);
-	left: calc(50vw - em(300px));
-	@include ifmobile {
-		left: calc(50vw - em(171px));
+	z-index: 99;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	pointer-events: none;
+
+	.Wrapper {
+		left: 0px;
+		right: 0px;
+		display: flex;
+		position: absolute;
+		transition: all 230ms cubic-bezier(0.21, 1.02, 0.73, 1) 0s;
+		transform: translateY(0px);
+		bottom: em(44px);
+		justify-content: center;
+		z-index: 99;
+		pointer-events: painted;
 	}
 
 	&_Alert {
 		width: 100%;
 		max-width: em(600px);
-		position: absolute;
 		padding: em(10px) em(16px);
 		display: flex;
 		align-items: center;
@@ -19,16 +30,18 @@
 		border-radius: em(8px);
 		background: linear-gradient(180deg, #bed252 0%, #eee797 100%);
 		box-shadow: 0px 6px 10px 0px rgba(190, 210, 82, 0.5);
-		transition: all 0.5s ease-in;
-		transform: translateY(0px);
+
+		animation: 0.35s cubic-bezier(0.21, 1.02, 0.73, 1) 0s 1 normal forwards
+			running fadeIn;
+
 		@include ifmobile {
+			left: calc(50vw - em(171px));
 			max-width: em(342px);
 			padding: em(10px) em(16px) em(10px) 0;
 		}
 	}
 
 	&_Icon {
-		cursor: pointer;
 		width: em(50px);
 		height: em(50px);
 		margin-right: em(6px);
@@ -61,5 +74,16 @@
 		cursor: pointer;
 		width: em(24px);
 		height: em(24px);
+	}
+}
+
+@include keyframe(fadeIn) {
+	0% {
+		transform: translate3d(0, 200%, 0) scale(0.6);
+		opacity: 0.5;
+	}
+	100% {
+		transform: translate3d(0, 0, 0) scale(1);
+		opacity: 1;
 	}
 }

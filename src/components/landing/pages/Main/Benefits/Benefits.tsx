@@ -57,8 +57,8 @@ const Benefits: React.FC = () => {
 						<path
 							d='M1.40616 0V39.0104L26.1433 74.1243H201V117'
 							stroke='white'
-							stroke-width='1.03812'
-							stroke-dasharray='5.19 5.19'
+							strokeWidth='1.03812'
+							strokeDasharray='5.19 5.19'
 						/>
 						<path d='M0.498047 56V74.4841H18.8401L0.498047 56Z' fill='white' />
 					</svg>
