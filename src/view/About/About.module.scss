@@ -9,7 +9,6 @@
 	background-repeat: no-repeat;
 	background-position: bottom;
 	background-size: cover;
-	image-rendering: pixelated;
 
 	@include iflaptop {
 		padding: em(300px) 0 em(394px);

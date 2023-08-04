@@ -631,28 +631,28 @@ const TermsAndConditions: React.FC = () => {
 
 						<p>
 							If you have a dispute or complaint about Terms & Agreements on a
-							Azure Processing website, we kindly ask that you attempt first to
-							resolve the issue
+							Cloud Ladz Processing website, we kindly ask that you attempt
+							first to resolve the issue
 						</p>
 
-						<p>directly with Azure Processing Support by email.</p>
+						<p>directly with Cloud Ladz Processing Support by email.</p>
 
 						<p>
 							We encourage you to contact us if you have any questions,
 							concerns, or comments about this Terms & Agremenets or the Site or
-							Services in general. You may contact us at
-							info@azureprocessing.solutions.
+							Services in general. You may contact us at info@Cloud
+							Ladzprocessing.solutions.
 						</p>
 
 						<p>Revisions To This Terms & Agreements</p>
 
 						<p>
-							Azure Processing reserves the right in our sole discretion to
+							Cloud Ladz Processing reserves the right in our sole discretion to
 							revise, amend, or modify this Terms & Agreements and our other
 							policies and agreements at any time and in any manner. Notice of
 							any revision, amendment, or modification of this policy will be
-							posted on Azure Processing websites, and a User’s continued use of
-							the Service will signify agreement to such changes.
+							posted on Cloud Ladz Processing websites, and a User’s continued
+							use of the Service will signify agreement to such changes.
 						</p>
 
 						<p>

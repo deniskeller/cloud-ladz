@@ -4,7 +4,6 @@
 	background-size: cover;
 	background-position: bottom;
 	background-image: url('/images/pictures/main-header-bg.png');
-	image-rendering: pixelated;
 	@include iflaptop {
 		background-image: url('/images/pictures/main-header-bg-2.png');
 	}
@@ -13,7 +12,6 @@
 	}
 	@include ifmobile {
 		background-image: url('/images/pictures/main-header-bg-4.png');
-		image-rendering: initial;
 	}
 }
 

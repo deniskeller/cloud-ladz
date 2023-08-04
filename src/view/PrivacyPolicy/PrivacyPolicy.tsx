@@ -11,7 +11,7 @@ const navbar_links = [
 	'Personal Data',
 	'Cookies And Passive Data Collection',
 	'Links To Third Party Sites',
-	'Azure Processing Service Providers',
+	'Cloud Ladz Service Providers',
 	'Legal Requirements',
 	'Change Of Ownership',
 	'Security',
@@ -44,7 +44,7 @@ const PrivacyPolicy: React.FC = () => {
 								</svg>
 							</span>
 
-							<h1>Azure Processing Privacy Policy</h1>
+							<h1>Cloud Ladz Privacy Policy</h1>
 						</div>
 
 						<div className={s.Content_Subtitle}>
@@ -55,35 +55,35 @@ const PrivacyPolicy: React.FC = () => {
 						</div>
 
 						<p>
-							This Privacy Policy explains the practices and policies of Azure
-							Processing (“Azure Processing”, AZURE PAYMENTS LIMITED) regarding
-							the collection and protection of Personal Data supplied by users
-							or collected by us from users of Azure Processing websites and the
-							Azure Processing services (the “Service”).
+							This Privacy Policy explains the practices and policies of Cloud
+							Ladz (“Cloud Ladz, Cloud Ladz PAYMENTS LIMITED) regarding the
+							collection and protection of Personal Data supplied by users or
+							collected by us from users of Cloud Ladz websites and the Cloud
+							Ladz services (the “Service”).
 						</p>
 
 						<p>
-							Azure Processing defines “Personal Data” as any data from which it
-							is practical to directly determine the identity of an individual.
-							Any capitalized terms not defined in this Privacy Policy have the
+							Cloud Ladz defines “Personal Data” as any data from which it is
+							practical to directly determine the identity of an individual. Any
+							capitalized terms not defined in this Privacy Policy have the
 							meanings given in the Service’s License and Service Agreement (the
-							“User Agreement”). This Privacy Policy may be updated by Azure
-							Processing from time to time. Azure Processing will provide notice
-							of materially significant changes to the Privacy Policy by posting
+							“User Agreement”). This Privacy Policy may be updated by Cloud
+							Ladz from time to time. Cloud Ladz will provide notice of
+							materially significant changes to the Privacy Policy by posting
 							notice on its websites.
 						</p>
 
 						<p>
 							By registering to use the Service, you agree (1) to comply with
-							the terms and conditions of this Privacy Policy and (2) Azure
-							Processing may process (i.e., collect, use, etc.) your Personal
-							Data as described in this Privacy Policy or the Terms and
-							Conditions. Personal Data may be processed by Azure Processing in
-							the country where it was collected as well as other countries
-							(including the United States) where laws regarding processing of
-							Personal Data may be less stringent. Please note that by visiting
-							and using Azure Processing’s website, you are accepting the
-							practices described in this Privacy Policy.
+							the terms and conditions of this Privacy Policy and (2) Cloud Ladz
+							may process (i.e., collect, use, etc.) your Personal Data as
+							described in this Privacy Policy or the Terms and Conditions.
+							Personal Data may be processed by Cloud Ladz in the country where
+							it was collected as well as other countries (including the United
+							States) where laws regarding processing of Personal Data may be
+							less stringent. Please note that by visiting and using Cloud Ladz
+							website, you are accepting the practices described in this Privacy
+							Policy.
 						</p>
 
 						<div className={s.Subtitle} id='section-1'>
@@ -94,7 +94,7 @@ const PrivacyPolicy: React.FC = () => {
 							<li>
 								We will not sell or market the email addresses or other
 								collected personal information of registered Users to third
-								parties. You acknowledge and agree that Azure Processing may
+								parties. You acknowledge and agree that Cloud Ladz may
 								occasionally send you administrative communications regarding
 								your account or the Service via email.
 							</li>
@@ -105,16 +105,16 @@ const PrivacyPolicy: React.FC = () => {
 						</div>
 						<ul>
 							<li>
-								Azure Processing uses cookie, IP address, and URL information to
+								Cloud Ladz uses cookie, IP address, and URL information to
 								improve and further develop the Service, and to provide enhanced
 								or geographically differentiated features and service levels to
-								Users, where available. Azure Processing uses cookies to save
-								User screen names, session validators, and on Users’ browsers
-								and hard drives, and may use them to provide tailored products
-								and services to those Users, as they become available. IP
-								Addresses also help us diagnose network congestion, problems
-								with our servers and otherwise assist in the administration and
-								delivery of the Service to our Users.
+								Users, where available. Cloud Ladz uses cookies to save User
+								screen names, session validators, and on Users’ browsers and
+								hard drives, and may use them to provide tailored products and
+								services to those Users, as they become available. IP Addresses
+								also help us diagnose network congestion, problems with our
+								servers and otherwise assist in the administration and delivery
+								of the Service to our Users.
 							</li>
 						</ul>
 
@@ -134,30 +134,28 @@ const PrivacyPolicy: React.FC = () => {
 								Clients – Clients interact with the Site and Services in a way
 								which requires sending of application form so that the Client
 								may then upload and incorporate additional information for use
-								with the Services. Once you became the Azure Processing Client,
-								you are not anonymous to Azure Processing. When signing up with
-								Azure Processing, you provide Personal Data, which may include
-								company name, industry, number of employees, phone number, your
-								title, city, state, country, zip code, a user name, confirmed
-								email address, and a password. Azure Processing may also record
-								your IP address when you submit information. Azure Processing
-								also may collect, at your option, certain preference and
-								demographic information from you.
+								with the Services. Once you became the Cloud Ladz Client, you
+								are not anonymous to Cloud Ladz. When signing up with Cloud
+								Ladz, you provide Personal Data, which may include company name,
+								industry, number of employees, phone number, your title, city,
+								state, country, zip code, a user name, confirmed email address,
+								and a password. Cloud Ladz may also record your IP address when
+								you submit information. Cloud Ladz also may collect, at your
+								option, certain preference and demographic information from you.
 							</li>
 							<li>
-								All information collected by Azure Processing is used for
-								internal purposes of providing the Service, providing support to
-								users, and to improve services. Aggregating non-identifying
-								information supplied by users allows Azure Processing to
-								understand its user base and to improve services.
+								All information collected by Cloud Ladz is used for internal
+								purposes of providing the Service, providing support to users,
+								and to improve services. Aggregating non-identifying information
+								supplied by users allows Cloud Ladz to understand its user base
+								and to improve services.
 							</li>
 							<li>
 								All Users may opt to remove their Personal Data from our live
-								database by contacting Azure Processing and canceling their
-								Azure Processing user account. Users of the Azure Processing
-								Services may also cancel their account at any time by sending a
-								cancellation request in writing, either by mail or electronic
-								mail.
+								database by contacting Cloud Ladz Processing and canceling their
+								Cloud Ladz user account. Users of the Cloud Ladz Services may
+								also cancel their account at any time by sending a cancellation
+								request in writing, either by mail or electronic mail.
 							</li>
 							<li>
 								In addition to the information that we actively collect during
@@ -184,16 +182,16 @@ const PrivacyPolicy: React.FC = () => {
 
 						<ul>
 							<li>
-								Azure Processing automatically receives and records information
-								on our server logs from your browser, including your IP address,
-								cookie information, and the page you request.
+								Cloud Ladz automatically receives and records information on our
+								server logs from your browser, including your IP address, cookie
+								information, and the page you request.
 							</li>
 							<li>
 								Users should be aware that other websites visited before
-								entering the Azure Processing websites might place Personal Data
-								within a User’s URL during a visit to their website, and Azure
-								Processing has no control over such websites. Accordingly, some
-								of this information may be logged by Azure Processing.
+								entering the Cloud Ladz websites might place Personal Data
+								within a User’s URL during a visit to their website, and Cloud
+								Ladz has no control over such websites. Accordingly, some of
+								this information may be logged by Cloud Ladz.
 							</li>
 						</ul>
 
@@ -203,17 +201,17 @@ const PrivacyPolicy: React.FC = () => {
 
 						<ul>
 							<li>
-								Azure Processing websites may contain links to other sites that
-								are not under our control. These websites have their own
-								policies regarding privacy. You should review those policies
-								before visiting the websites. We have no responsibility for
-								linked websites, and we provide these links solely for the
-								convenience and information of our visitors.
+								Cloud Ladz websites may contain links to other sites that are
+								not under our control. These websites have their own policies
+								regarding privacy. You should review those policies before
+								visiting the websites. We have no responsibility for linked
+								websites, and we provide these links solely for the convenience
+								and information of our visitors.
 							</li>
 						</ul>
 
 						<div className={s.Subtitle} id='section-6'>
-							<h2>Azure Processing Service Providers</h2>
+							<h2>Cloud Ladz Service Providers</h2>
 						</div>
 
 						<ul>
@@ -263,9 +261,9 @@ const PrivacyPolicy: React.FC = () => {
 
 						<ul>
 							<li>
-								Azure Processing does not disclose Personal Data, including the
-								data associated with the Service, unless disclosure is necessary
-								to comply with an enforceable governmental request such as a
+								Cloud Ladz does not disclose Personal Data, including the data
+								associated with the Service, unless disclosure is necessary to
+								comply with an enforceable governmental request such as a
 								warrant.
 								<ol>
 									<li>
@@ -312,13 +310,13 @@ const PrivacyPolicy: React.FC = () => {
 							<li>
 								In the event of a change in ownership, or a direct merger or
 								acquisition with another entity, we reserve the right to
-								transfer all of Azure Processing User information, including
-								Personal Data, to a separate entity. We will use commercially
-								reasonable efforts to notify you (by posting on our website or
-								an email to the email address you provide when you register) of
-								any change in ownership, merger or acquisition of Azure
-								Processing’s assets by a third party, and you may choose to
-								modify any of your registration information at that time.
+								transfer all of Cloud Ladz User information, including Personal
+								Data, to a separate entity. We will use commercially reasonable
+								efforts to notify you (by posting on our website or an email to
+								the email address you provide when you register) of any change
+								in ownership, merger or acquisition of Cloud Ladz assets by a
+								third party, and you may choose to modify any of your
+								registration information at that time.
 							</li>
 						</ul>
 
@@ -327,16 +325,16 @@ const PrivacyPolicy: React.FC = () => {
 						</div>
 						<ul>
 							<li>
-								Azure Processing uses industry standard security measures to
-								protect against the loss, misuse and alteration of the
-								information under our control. Although we make good faith
-								efforts to store the information collected by Azure Processing
-								in a secure operating environment that is not available to the
-								public, Azure Processing cannot guarantee complete security.
-								Further, while we take reasonable steps to ensure the integrity
-								and security of our network and systems, we cannot guarantee
-								that our security measures will prevent third-party “crackers”
-								from obtaining this information.
+								Cloud Ladz uses industry standard security measures to protect
+								against the loss, misuse and alteration of the information under
+								our control. Although we make good faith efforts to store the
+								information collected by Cloud Ladz in a secure operating
+								environment that is not available to the public, Cloud Ladz
+								cannot guarantee complete security. Further, while we take
+								reasonable steps to ensure the integrity and security of our
+								network and systems, we cannot guarantee that our security
+								measures will prevent third-party “crackers” from obtaining this
+								information.
 							</li>
 						</ul>
 
@@ -345,16 +343,14 @@ const PrivacyPolicy: React.FC = () => {
 						</div>
 						<ul>
 							<li>
-								If you have a dispute or complaint about privacy on a Azure
-								Processing website, we kindly ask that you attempt first to
-								resolve the issue directly with Azure Processing Support by
-								email.
+								If you have a dispute or complaint about privacy on a Cloud Ladz
+								website, we kindly ask that you attempt first to resolve the
+								issue directly with Cloud Ladz Support by email.
 							</li>
 							<li>
 								We encourage you to contact us if you have any questions,
 								concerns, or comments about this Policy or the Site or Services
-								in general. You may contact us at
-								info@azureprocessing.solutions.
+								in general. You may contact us at info@CloudLadz.solutions.
 							</li>
 						</ul>
 
@@ -363,12 +359,12 @@ const PrivacyPolicy: React.FC = () => {
 						</div>
 						<ul>
 							<li>
-								Azure Processing reserves the right in our sole discretion to
-								revise, amend, or modify this policy and our other policies and
+								Cloud Ladz reserves the right in our sole discretion to revise,
+								amend, or modify this policy and our other policies and
 								agreements at any time and in any manner. Notice of any
 								revision, amendment, or modification of this policy will be
-								posted on Azure Processing websites, and a User’s continued use
-								of the Service will signify agreement to such changes.
+								posted on Cloud Ladz websites, and a User’s continued use of the
+								Service will signify agreement to such changes.
 							</li>
 							<li>
 								Registration or Use of The Service Signifies your Agreement to

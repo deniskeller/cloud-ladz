@@ -3,7 +3,6 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: top;
-	image-rendering: pixelated;
 
 	@include ifmobile {
 		image-rendering: initial;

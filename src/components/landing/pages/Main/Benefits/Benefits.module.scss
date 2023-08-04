@@ -109,9 +109,6 @@
 		top: em(90px);
 		left: em(-175px);
 		transform: scale(1, -1);
-		.Image {
-			image-rendering: pixelated;
-		}
 
 		@include iflaptop {
 			width: 100%;
