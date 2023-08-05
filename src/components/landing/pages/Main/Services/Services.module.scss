@@ -68,7 +68,7 @@
 
 			&_Desktop {
 				display: none;
-				@include ifdesktop {
+				@media only screen and (min-width: 1699px) {
 					display: block;
 				}
 			}
