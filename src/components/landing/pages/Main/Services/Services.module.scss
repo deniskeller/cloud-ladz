@@ -1,14 +1,14 @@
 .Services {
 	&_Title {
-		margin-bottom: em(10px);
+		margin-bottom: em(50px);
 		@include iflaptop {
-			margin-bottom: em(7px);
+			margin-bottom: em(30px);
 		}
 		@include iftablet {
-			margin-bottom: em(25px);
+			margin-bottom: em(78px);
 		}
 		@include ifmobile {
-			margin-bottom: em(0px);
+			margin-bottom: em(43px);
 		}
 		h2 {
 			color: $white;
@@ -31,53 +31,169 @@
 		position: relative;
 		width: 100%;
 		height: em(710px);
-		background-image: url('/images/pictures/services-pictures-1.png');
-		background-repeat: no-repeat;
-		background-size: cover;
-		background-position: auto;
+		background: linear-gradient(
+			360deg,
+			#5f41d4 0%,
+			rgba(69, 40, 180, 0.5) 59.67%,
+			rgba(40, 29, 83, 0) 100%
+		);
+
 		@media only screen and (min-width: 769px) and (max-width: 1699px) {
 			width: em(924px);
 			height: em(946px);
 			margin: 0 auto;
-			background-image: url('/images/pictures/services-pictures-2.png');
 		}
 		@include iftablet {
 			height: em(830px);
-			background-image: url('/images/pictures/services-pictures-3.png');
 		}
 		@include ifmobile {
 			height: em(1016px);
-			background-image: url('/images/pictures/services-pictures-4.png');
 		}
 
-		.Image1 {
-			display: none;
-			img {
-				position: absolute;
-			}
-			@media only screen and (min-width: 1700px) {
-				display: block;
-			}
-		}
+		.Grass {
+			width: 100%;
+			height: auto;
+			position: absolute;
+			bottom: 0;
+			left: 0;
 
-		.Image2 {
-			display: none;
 			@media only screen and (min-width: 769px) and (max-width: 1699px) {
-				display: block;
+				height: auto;
 			}
-		}
-
-		.Image3 {
-			display: none;
 			@include iftablet {
-				display: block;
+				height: auto;
+			}
+			@include ifmobile {
+				height: auto;
+			}
+
+			&_Desktop {
+				display: none;
+				@include ifdesktop {
+					display: block;
+				}
+			}
+
+			&_Laptop {
+				display: none;
+				@media only screen and (min-width: 769px) and (max-width: 1699px) {
+					display: block;
+				}
+			}
+
+			&_Tablet {
+				display: none;
+				@include iftablet {
+					display: block;
+				}
+			}
+
+			&_Mobile {
+				display: none;
+				@include ifmobile {
+					display: block;
+				}
 			}
 		}
 
-		.Image4 {
-			display: none;
+		.Bush {
+			position: absolute;
+			z-index: 1;
+			width: em(126px);
+			height: em(93px);
+			@include iftablet {
+				width: em(90px);
+				height: em(63px);
+			}
 			@include ifmobile {
-				display: block;
+				width: em(64px);
+				height: em(45px);
+			}
+
+			&_Desktop {
+				@include iftablet {
+					display: none;
+				}
+				@include ifmobile {
+					display: none;
+				}
+			}
+
+			&_Mobile {
+				display: none;
+				@include iftablet {
+					display: block;
+				}
+				@include ifmobile {
+					display: block;
+				}
+			}
+
+			&_1 {
+				bottom: em(167px);
+				left: em(229px);
+				@media only screen and (min-width: 769px) and (max-width: 1699px) {
+					bottom: em(165px);
+					left: em(21px);
+				}
+				@include iftablet {
+					bottom: em(120px);
+					left: em(21px);
+				}
+				@include ifmobile {
+					bottom: em(118px);
+					left: em(12px);
+				}
+			}
+
+			&_2 {
+				bottom: em(167px);
+				left: em(427px);
+				@media only screen and (min-width: 769px) and (max-width: 1699px) {
+					bottom: em(167px);
+					left: em(195px);
+				}
+				@include iftablet {
+					bottom: em(120px);
+					left: em(163px);
+				}
+				@include ifmobile {
+					bottom: em(118px);
+					left: em(113px);
+				}
+			}
+
+			&_3 {
+				bottom: em(154px);
+				left: em(705px);
+				@media only screen and (min-width: 769px) and (max-width: 1699px) {
+					bottom: em(154px);
+					left: em(440px);
+				}
+				@include iftablet {
+					bottom: em(112px);
+					left: em(362px);
+				}
+				@include ifmobile {
+					display: none;
+				}
+			}
+
+			&_4 {
+				right: em(252px);
+				bottom: em(165px);
+				@media only screen and (min-width: 769px) and (max-width: 1699px) {
+					right: em(97px);
+					bottom: em(165px);
+				}
+				@include iftablet {
+					right: em(32px);
+					bottom: em(119px);
+				}
+				@include ifmobile {
+					right: em(9px);
+					bottom: em(112px);
+				}
 			}
 		}
 	}
