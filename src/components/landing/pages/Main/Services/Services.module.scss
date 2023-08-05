@@ -50,14 +50,12 @@
 			height: em(1016px);
 		}
 
-		.Grass {
+		&_Grass {
+			position: absolute;
+			bottom: 0;
 			width: 100%;
 			// height: em(168px);
 			height: auto;
-			position: absolute;
-			bottom: 0;
-			left: 0;
-			right: 0;
 
 			// @include iftablet {
 			// 	height: em(126px);
@@ -66,31 +64,36 @@
 			// 	height: em(126px);
 			// }
 
-			&_Desktop {
-				display: none;
-				@media only screen and (min-width: 1699px) {
-					display: block;
-				}
-			}
+			.Grass {
+				width: 100%;
+				height: inherit;
 
-			&_Laptop {
-				display: none;
-				@media only screen and (min-width: 769px) and (max-width: 1699px) {
-					display: block;
+				&_Desktop {
+					display: none;
+					@media only screen and (min-width: 1699px) {
+						display: block;
+					}
 				}
-			}
 
-			&_Tablet {
-				display: none;
-				@include iftablet {
-					display: block;
+				&_Laptop {
+					display: none;
+					@media only screen and (min-width: 769px) and (max-width: 1699px) {
+						display: block;
+					}
 				}
-			}
 
-			&_Mobile {
-				display: none;
-				@include ifmobile {
-					display: block;
+				&_Tablet {
+					display: none;
+					@include iftablet {
+						display: block;
+					}
+				}
+
+				&_Mobile {
+					display: none;
+					@include ifmobile {
+						display: block;
+					}
 				}
 			}
 		}
