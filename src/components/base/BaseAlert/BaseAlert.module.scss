@@ -53,7 +53,7 @@
 		align-items: center;
 
 		.Text {
-			width: max-content;
+			width: auto;
 			max-width: em(440px);
 			line-height: 100%;
 			@include ifmobile {
