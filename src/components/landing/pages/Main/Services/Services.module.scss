@@ -54,19 +54,25 @@
 			position: absolute;
 			bottom: 0;
 			width: 100%;
-			// height: em(168px);
 			height: auto;
+			height: em(168px);
+			overflow: hidden;
+			// background: $black;
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: bottom;
+			background-image: url('/images/pictures/grass-1.png');
 
-			// @include iftablet {
-			// 	height: em(126px);
-			// }
-			// @include ifmobile {
-			// 	height: em(126px);
-			// }
+			@include iftablet {
+				height: em(126px);
+			}
+			@include ifmobile {
+				height: em(126px);
+			}
 
 			.Grass {
 				width: 100%;
-				height: inherit;
+				height: 100%;
 
 				&_Desktop {
 					display: none;

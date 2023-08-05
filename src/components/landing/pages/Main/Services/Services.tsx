@@ -64,7 +64,7 @@ const Services: React.FC = () => {
 					{/* трава */}
 
 					<div className={s.Services_Pictures_Grass}>
-						<svg
+						{/* <svg
 							viewBox='0 0 1572 168'
 							fill='none'
 							xmlns='http://www.w3.org/2000/svg'
@@ -343,7 +343,7 @@ const Services: React.FC = () => {
 								d='M75.1052 71.4121H46.3164V84.3928H75.1052V71.4121Z'
 								fill='#50903B'
 							/>
-						</svg>
+						</svg> */}
 
 						<svg
 							viewBox='0 0 924 168'
