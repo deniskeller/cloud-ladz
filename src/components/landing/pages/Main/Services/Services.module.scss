@@ -50,14 +50,13 @@
 			height: em(1016px);
 		}
 
-		&_Grass {
+		.Grass {
 			position: absolute;
 			bottom: 0;
 			width: 100%;
 			height: auto;
 			height: em(168px);
 			overflow: hidden;
-			// background: $black;
 			background-repeat: no-repeat;
 			background-size: cover;
 			background-position: bottom;
@@ -68,39 +67,6 @@
 			}
 			@include ifmobile {
 				height: em(126px);
-			}
-
-			.Grass {
-				width: 100%;
-				height: 100%;
-
-				&_Desktop {
-					display: none;
-					@media only screen and (min-width: 1699px) {
-						display: block;
-					}
-				}
-
-				&_Laptop {
-					display: none;
-					@media only screen and (min-width: 769px) and (max-width: 1699px) {
-						display: block;
-					}
-				}
-
-				&_Tablet {
-					display: none;
-					@include iftablet {
-						display: block;
-					}
-				}
-
-				&_Mobile {
-					display: none;
-					@include ifmobile {
-						display: block;
-					}
-				}
 			}
 		}
 
@@ -204,10 +170,420 @@
 				}
 			}
 		}
+
+		.Astronaut {
+			position: absolute;
+			top: em(-39px);
+			left: em(320px);
+			width: em(48px);
+			height: em(98px);
+
+			@media only screen and (min-width: 769px) and (max-width: 1699px) {
+				top: em(-23px);
+				left: em(258px);
+			}
+			@include iftablet {
+				top: em(-53px);
+				left: em(233px);
+			}
+			@include ifmobile {
+				top: em(-53px);
+				left: em(207px);
+				width: em(39px);
+				height: em(79px);
+			}
+		}
+
+		.Tags {
+			&_Item {
+				display: flex;
+				position: absolute;
+				width: max-content;
+				height: max-content;
+				background: #bed252;
+				border-radius: em(16px);
+
+				&_Wrapper {
+					line-height: 100%;
+					position: relative;
+					width: 100%;
+					height: 100%;
+					padding: em(12px) em(14px);
+				}
+				&_Icon {
+					position: absolute;
+					width: em(29px);
+					height: em(29px);
+				}
+				span {
+					color: $violet;
+					text-align: center;
+					font-size: em(20px);
+					font-style: normal;
+					font-weight: 500;
+					line-height: normal;
+					@media only screen and (min-width: 769px) and (max-width: 1699px) {
+						font-size: em(18px);
+					}
+					@include iftablet {
+						font-size: em(16px);
+					}
+					@include ifmobile {
+						font-size: em(14px);
+					}
+				}
+
+				&_1 {
+					top: em(58px);
+					left: em(138px);
+					@media only screen and (min-width: 769px) and (max-width: 1699px) {
+						top: em(75px);
+						left: em(96px);
+					}
+					@include iftablet {
+						top: em(45px);
+						left: em(96px);
+					}
+					@include ifmobile {
+						top: em(26px);
+						left: em(96px);
+					}
+				}
+
+				&_2 {
+					top: em(62px);
+					left: em(648px);
+					@media only screen and (min-width: 769px) and (max-width: 1699px) {
+						top: em(154px);
+						left: em(710px);
+					}
+					@include iftablet {
+						top: em(121px);
+						left: em(580px);
+					}
+					@include ifmobile {
+						top: em(488px);
+						left: em(30px);
+					}
+				}
+
+				&_3 {
+					top: em(46px);
+					right: em(89px);
+					@media only screen and (min-width: 769px) and (max-width: 1699px) {
+						top: em(500px);
+						right: em(20px);
+					}
+					@include iftablet {
+						top: em(482px);
+						right: em(23px);
+					}
+					@include ifmobile {
+						top: em(709px);
+						right: em(4px);
+					}
+
+					.Tags_Item_Icon_1 {
+						top: em(-43px);
+						left: em(89px);
+						@media only screen and (min-width: 769px) and (max-width: 1699px) {
+							left: em(75px);
+						}
+						@include iftablet {
+							left: em(61px);
+						}
+						@include ifmobile {
+							left: em(47px);
+						}
+					}
+					.Tags_Item_Icon_2 {
+						top: em(-43px);
+						left: 50%;
+						transform: translate(-50%, 0);
+					}
+					.Tags_Item_Icon_3 {
+						top: em(-43px);
+						right: em(89px);
+						@media only screen and (min-width: 769px) and (max-width: 1699px) {
+							right: em(75px);
+						}
+						@include iftablet {
+							right: em(61px);
+						}
+						@include ifmobile {
+							right: em(47px);
+						}
+					}
+				}
+
+				&_4 {
+					top: em(142px);
+					left: em(30px);
+					@media only screen and (min-width: 769px) and (max-width: 1699px) {
+						top: em(154px);
+						left: em(30px);
+					}
+					@include iftablet {
+						top: em(119px);
+						left: em(46px);
+					}
+					@include ifmobile {
+						top: em(87px);
+						left: em(1px);
+					}
+				}
+
+				&_5 {
+					top: em(118px);
+					left: em(373px);
+					@media only screen and (min-width: 769px) and (max-width: 1699px) {
+						top: em(142px);
+					}
+					@include iftablet {
+						top: em(96px);
+						left: em(317px);
+					}
+					@include ifmobile {
+						top: em(143px);
+						left: em(142px);
+					}
+
+					.Tags_Item_Icon_1 {
+						top: em(-43px);
+						left: em(48px);
+						@media only screen and (min-width: 769px) and (max-width: 1699px) {
+							left: em(38px);
+						}
+						@include iftablet {
+							left: em(29px);
+						}
+						@include ifmobile {
+							left: em(20px);
+						}
+					}
+					.Tags_Item_Icon_2 {
+						top: em(-43px);
+						left: 50%;
+						transform: translate(-50%, 0);
+					}
+					.Tags_Item_Icon_3 {
+						top: em(-43px);
+						right: em(48px);
+						@media only screen and (min-width: 769px) and (max-width: 1699px) {
+							right: em(38px);
+						}
+						@include iftablet {
+							right: em(29px);
+						}
+						@include ifmobile {
+							right: em(20px);
+						}
+					}
+				}
+
+				&_6 {
+					top: em(117px);
+					right: em(412px);
+					@media only screen and (min-width: 769px) and (max-width: 1699px) {
+						top: em(435px);
+						right: em(296px);
+					}
+					@include iftablet {
+						top: em(395px);
+						right: em(225px);
+					}
+					@include ifmobile {
+						top: em(609px);
+						right: em(113px);
+					}
+				}
+
+				&_7 {
+					top: em(181px);
+					left: em(554px);
+					@media only screen and (min-width: 769px) and (max-width: 1699px) {
+						top: em(229px);
+						left: em(545px);
+					}
+					@include iftablet {
+						top: em(171px);
+						left: em(405px);
+					}
+					@include ifmobile {
+						top: em(257px);
+						left: em(17px);
+					}
+				}
+
+				&_8 {
+					top: em(250px);
+					left: em(188px);
+					@media only screen and (min-width: 769px) and (max-width: 1699px) {
+						left: em(140px);
+					}
+					@include iftablet {
+						top: em(216px);
+						left: em(42px);
+					}
+					@include ifmobile {
+						top: em(188px);
+						left: em(1px);
+					}
+
+					.Tags_Item_Icon_1 {
+						top: em(-43px);
+						left: 50%;
+						transform: translate(-50%, 0);
+					}
+				}
+
+				&_9 {
+					top: em(267px);
+					left: em(434px);
+					@media only screen and (min-width: 769px) and (max-width: 1699px) {
+						left: em(346px);
+					}
+					@include iftablet {
+						top: em(225px);
+						left: em(252px);
+					}
+					@include ifmobile {
+						top: em(236px);
+						left: em(200px);
+					}
+					.Tags_Item_Icon_1 {
+						top: em(-43px);
+						left: 50%;
+						transform: translate(-50%, 0);
+					}
+				}
+
+				&_10 {
+					top: em(245px);
+					right: em(656px);
+					@media only screen and (min-width: 769px) and (max-width: 1699px) {
+						top: em(313px);
+						right: em(91px);
+					}
+					@include iftablet {
+						top: em(247px);
+						right: em(43px);
+					}
+					@include ifmobile {
+						top: em(482px);
+						right: em(13px);
+					}
+				}
+
+				&_11 {
+					top: em(219px);
+					right: em(257px);
+					@media only screen and (min-width: 769px) and (max-width: 1699px) {
+						top: em(506px);
+						right: em(536px);
+					}
+					@include iftablet {
+						top: em(477px);
+						right: em(380px);
+					}
+					@include ifmobile {
+						top: em(552px);
+						right: em(28px);
+					}
+				}
+
+				&_12 {
+					top: em(357px);
+					left: em(61px);
+					@media only screen and (min-width: 769px) and (max-width: 1699px) {
+						top: em(588px);
+					}
+					@include iftablet {
+						top: em(553px);
+						left: em(32px);
+					}
+					@include ifmobile {
+						max-width: em(283px);
+						top: em(771px);
+						left: em(8px);
+					}
+				}
+
+				&_13 {
+					top: em(389px);
+					right: em(507px);
+					@media only screen and (min-width: 769px) and (max-width: 1699px) {
+						top: em(433px);
+						right: auto;
+						left: em(20px);
+					}
+					@include iftablet {
+						top: em(394px);
+						right: auto;
+						left: em(20px);
+					}
+					@include ifmobile {
+						top: em(423px);
+						right: auto;
+						left: em(16px);
+					}
+
+					.Tags_Item_Icon_1 {
+						top: em(-40px);
+						left: em(44px);
+						@include ifmobile {
+							top: em(-40px);
+							left: auto;
+							right: 2px;
+						}
+					}
+					.Tags_Item_Icon_2 {
+						top: em(-75px);
+						left: em(97px);
+						@include ifmobile {
+							top: em(-13px);
+							left: auto;
+							right: em(-57px);
+						}
+					}
+					.Tags_Item_Icon_3 {
+						top: em(-103px);
+						right: em(-9px);
+						@media only screen and (min-width: 769px) and (max-width: 1699px) {
+							right: em(-25px);
+						}
+						@include iftablet {
+							right: em(-40px);
+						}
+						@include ifmobile {
+							top: em(19px);
+							right: em(-110px);
+						}
+					}
+				}
+
+				&_14 {
+					top: em(311px);
+					right: em(35px);
+					@media only screen and (min-width: 769px) and (max-width: 1699px) {
+						top: em(355px);
+						right: em(298px);
+					}
+					@include iftablet {
+						top: em(316px);
+						right: em(124px);
+					}
+					@include ifmobile {
+						top: em(325px);
+						right: em(2px);
+					}
+				}
+			}
+		}
 	}
 }
 
-@include iflaptop {
+@media only screen and (min-width: 769px) and (max-width: 1699px) {
 }
 @include iftablet {
 }
